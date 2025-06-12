@@ -65,6 +65,9 @@
     }
 }
 @media (max-width: 540px) {
+    .container-momo > .section-1 {
+        padding: 26% 0% 10% 0%;
+    }
     .container-momo > .section-2 .title > p {
         font-size: 1.8rem;
         padding-top: 50px;

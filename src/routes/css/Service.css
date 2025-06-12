@@ -106,11 +106,9 @@
         font-size: 20px;
         padding: 10px 24px;
     }
-    
     .container-service > .content > .item > .sub-title {
         font-size: 16px;
     }
-    
     .container-service > .content > .item > .img-container {
         flex-direction: column;
         height: 180vw;
@@ -124,6 +122,9 @@
         padding: 0px;
     }
     .container-service > .content {
-        padding: 10px;
+        padding: 30px 10px;
+    }
+    .container-service > .content > .item > .img-container {
+        height: 220vw;
     }
 }
