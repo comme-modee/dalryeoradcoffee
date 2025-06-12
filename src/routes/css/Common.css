@@ -1,0 +1,28 @@
+.container {
+    padding: 70px 0px 140px 0px;
+}
+.title > p:nth-child(1) {
+    font-family: 'NanumSquareNeo-EB';
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 140px;
+}
+.title > p:nth-child(2) {
+    font-family: 'NanumSquareNeo-R';
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3.5rem;
+}
+.pretendard-R { font-family: 'Pretendard-R'; }
+.pretendard-M { font-family: 'Pretendard-M'; }
+
+@media screen and (max-width: 768px) {
+    .title > p:nth-child(1) {
+        font-size: 1.8rem;
+        padding-top: 70px;
+    }
+    .title > p:nth-child(2) {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+}

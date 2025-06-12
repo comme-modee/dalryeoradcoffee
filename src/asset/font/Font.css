@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Pretendard-L';
+    src: url('./Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard-R';
+    src: url('./Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard-M';
+    src: url('./Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard-SB';
+    src: url('./Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard-B';
+    src: url('./Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-L';
+    src: url('./NanumSquareNeoOTF-Lt.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-R';
+    src: url('./NanumSquareNeoOTF-Rg.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-EB';
+    src: url('./NanumSquareNeoOTF-Eb.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,117 @@
+.hamburger-menu {
+    position: relative;
+    z-index: 1100;
+}
+
+/* 햄버거 아이콘은 기존 그대로 유지 */
+.hamburger-icon {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1200; /* 메뉴 위에 뜨도록 */
+}
+
+.hamburger-icon > span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    border-radius: 2px;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+.hamburger-icon > span:nth-child(1) {
+    top: 0;
+    transition:
+        transform 0.25s,
+        top 0.25s 0.25s,
+        background-color 0.25s;
+}
+.hamburger-icon > span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hamburger-icon > span:nth-child(3) {
+    bottom: 0;
+    transition:
+        transform 0.25s,
+        bottom 0.25s 0.25s,
+        background-color 0.25s;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    background-color: #ffffff;
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+    transition:
+        top 0.25s,
+        transform 0.25s 0.25s,
+        background-color 0.25s;
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    background-color: #ffffff;
+    width: 0;
+    transition: 
+        width 0.25s 0.25s,
+        background-color 0.25s;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+    background-color: #ffffff;
+    bottom: calc(50% - 1px);
+    transform: rotate(-45deg);
+    transition:
+        bottom 0.25s,
+        transform 0.25s 0.25s,
+        background-color 0.25s;
+}
+
+/* 오른쪽 사이드 메뉴 스타일 */
+.hamburger-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #4a00ff;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+    z-index: 1150;
+    overflow-y: auto;
+}
+
+/* 열릴 때 */
+.hamburger-dropdown.open {
+    transform: translateX(0);
+}
+
+/* 링크 스타일 */
+.hamburger-dropdown .menu-item {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.2rem 0;
+    font-family: 'Pretendard-B';
+    font-size: 1.2rem;
+    transition: color 0.3s ease-out;
+    text-align: left;
+}
+.hamburger-dropdown .submenu {
+    color: #ffffff;
+    line-height: 1.8rem;
+    transform: translateY(-10px);
+    transition: color 0.3s ease-out;
+    text-align: left;
+}
+.hamburger-dropdown a:hover {
+    cursor: pointer;
+    color: #bbff00;
+}

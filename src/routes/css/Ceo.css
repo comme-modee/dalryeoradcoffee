@@ -1,0 +1,41 @@
+.career {
+    display: flex;
+    width: 96%;
+    max-width: 1080px;
+    height: 640px;
+    margin: 50px auto;
+}
+.career > .text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.career > .text > p {
+    padding: 14px 0px;
+    border-bottom: 1px solid #eee;
+}
+.career > .img {
+    width: 45%;
+    height: 100%;
+    background: url('../../asset/img/photos/ceo.jpg') center center/cover;
+}
+
+@media screen and (max-width: 1000px) {
+    .career {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .career > .text {
+        width: 100%;
+        padding: 20px;
+    }
+    .career > .text > p {
+        padding: 10px 0px;
+    }
+    .career > .img {
+        width: 100%;
+        height: 100vw;
+    }
+}

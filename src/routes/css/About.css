@@ -1,0 +1,122 @@
+.container-about > .section-1 {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.container-about > .section-1 > .content {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.container-about > .section-1 > table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.container-about > .section-1 > table th {
+    background-color: #f5f5f5;
+    font-size: 1.2em;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.container-about > .section-1 > table td {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-about > .section-1 > table td:first-child {
+    background-color: #e1eaf0;
+    font-family: 'Pretendard-SB';
+    width: 20%;
+}
+.container-about > .section-1-img {
+    width: 100%;
+    height: 30vw;
+}
+.container-about > .section-1-img > img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-about > .section-2 {
+    width: 100%;
+    background: url('../../asset/img/bg-1.jpg') center center/cover;
+    padding-bottom: 100px;
+}
+.container-about > .section-2 > .content {
+    width: 94%;
+    max-width: 900px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 50px;
+    text-align: center;
+    line-height: 1.8rem;
+}
+.container-about > .section-2 > .content > .top {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+.container-about > .section-2 > .content > .line {
+    width: 100%;
+    border: 0.5px solid #4a00ff;
+    margin: 30px 0px;
+}
+.container-about > .section-2 > .content > .bottom {
+    font-size: 1.1rem;
+}
+
+.container-about > .section-3 > .content {
+    text-align: center;
+}
+.container-about > .section-3 > .content > .top {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 30px 0px;
+}
+.container-about > .section-3 > .content > .bottom {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-family: 'Pretendard-SB';
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-about > .section-1 > .content {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .container-about > .section-1-img {
+        height: auto;
+    }
+    .container-about > .section-1-img > img {
+        width: 100%;
+    }
+    .container-about > .section-2 > .content {
+        padding: 30px;
+    }
+    .container-about > .section-2 > .content > .top {
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+    .container-about > .section-2 > .content > .line {
+        margin: 20px 0px;
+    }
+    .container-about > .section-2 > .content > .bottom {
+        font-size: 1rem;
+    }
+    .container-about > .section-3 > .content > .top {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .container-about > .section-3 > .content > .bottom {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}
