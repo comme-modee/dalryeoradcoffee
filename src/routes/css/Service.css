@@ -123,4 +123,7 @@
     .container-service > .intro {
         padding: 0px;
     }
+    .container-service > .content {
+        padding: 10px;
+    }
 }
