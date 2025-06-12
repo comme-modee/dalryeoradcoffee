@@ -5,3 +5,9 @@
     padding: 50px;
     line-height: 1.5rem;
 }
+@media (max-width: 540px) {
+    .footer {
+        padding: 40px 20px;
+        font-size: 14px;
+    }
+}
