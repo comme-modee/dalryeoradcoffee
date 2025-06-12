@@ -15,9 +15,9 @@ const Momo = () => {
       </div>
       <div className='section-2'>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{
               ease: "easeInOut",
               y: { duration: 1 },
@@ -35,8 +35,8 @@ const Momo = () => {
         </motion.div>
         <motion.div
               className={'img-container'}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.8 }}
               transition={{
                   ease: "easeInOut",

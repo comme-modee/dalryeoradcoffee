@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    padding: 60px 0px;
     background-color: #ffec8e;
 }
 .container-menu > .intro > .text {
@@ -47,7 +47,7 @@
     max-width: 1080px;
     margin: 0 auto;
     text-align: center;
-    padding: 50px;
+    padding: 50px 10px;
 }
 .container-menu > .content > .title {
     font-family: 'Pretendard-SB';
@@ -66,7 +66,7 @@
 
 @media screen and (max-width: 768px) {
     .container-menu > .intro {
-        height: 200px;
+        padding: 20px 0px;
     }
     .container-menu > .intro > .text > p:nth-child(1) {
         font-size: 32px;
@@ -75,7 +75,7 @@
         font-size: 20px;
     }
     .container-menu > .content {
-        padding: 30px;
+        padding: 30px 10px;
     }
     .container-menu > .content > .item {
         gap: 14px;
@@ -84,13 +84,25 @@
         font-size: 20px;
         padding: 10px 24px;
     }
-
     .container-menu > .content > .item > .sub-title {
         font-size: 16px;
     }
-
     .container-menu > .content > .item > .img-container {
         flex-direction: column;
         height: 180vw;
+    }
+}
+@media screen and (max-width: 540px) {
+    .container-menu {
+        padding: 60px 0px 0px 0px;
+    }
+    .container-menu > .intro {
+        padding: 0px;
+    }
+    .container-menu > .content {
+        padding: 20px 10px;
+    }
+    .container-menu > .content > .inner > .title {
+        font-size: 26px;
     }
 }

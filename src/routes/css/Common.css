@@ -26,3 +26,8 @@
         line-height: 2.2rem;
     }
 }
+@media screen and (max-width: 540px) {
+    .container {
+        padding: 60px 0px 100px 0px;
+    }
+}

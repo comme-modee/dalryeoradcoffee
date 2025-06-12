@@ -136,3 +136,15 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 540px) {
+    .main-container {
+        padding: 70px 20px 30px 20px;
+    }
+    .main-text p {
+        font-size: 20vw;
+        line-height: 22vw;
+    }
+    .main-title > p:nth-child(1) {
+        font-size: 44px;
+    }
+}

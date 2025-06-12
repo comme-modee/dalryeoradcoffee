@@ -119,3 +119,9 @@
         display: block;
     }
 }
+@media screen and (max-width: 540px) {
+    .header {
+        height: 60px;
+        padding: 10px 20px;
+    }
+}

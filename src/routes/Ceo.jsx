@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Ceo = () => {
   return (
-    <div className='container'>
+    <div className='container-ceo'>
       <motion.div
         className={'title'}
         initial={{ opacity: 0, y: 30 }}
