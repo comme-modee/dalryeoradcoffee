@@ -1,6 +1,6 @@
 .hamburger-menu {
     position: relative;
-    z-index: 1100;
+    z-index: 9999;
 }
 
 /* 햄버거 아이콘은 기존 그대로 유지 */

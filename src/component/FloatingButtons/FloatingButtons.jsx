@@ -11,7 +11,7 @@ const FloatingButtons = () => {
   return (
     <div className='floating-btn-wrapper'>
         <a
-            href='https://pf.kakao.com/_ABCD1234/chat' // ← 여기에 실제 채널 채팅 URL 입력
+            href='https://pf.kakao.com/_vDSrn/chat'
             target='_blank'
             rel='noopener noreferrer'
             className='btn'
