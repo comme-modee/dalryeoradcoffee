@@ -13,7 +13,7 @@ const Roza = () => {
                     rel="noopener noreferrer"
                     className="btn"
                 >
-                    로자와 대화해보세요
+                    로자와 대화하러가기
                 </a>
             </div>
         </div>

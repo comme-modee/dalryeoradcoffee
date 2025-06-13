@@ -37,7 +37,7 @@ const Momo = () => {
                 className={'img-container'}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{
                     ease: "easeInOut",
                     y: { duration: 1 },

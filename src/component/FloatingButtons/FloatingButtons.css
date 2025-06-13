@@ -63,6 +63,9 @@ pointer: fine: 정밀한 입력 장치(마우스처럼)일 때만 적용
     }
 }
 @media screen and (max-width: 540px) {
+    .floating-btn-wrapper {
+        gap: 6px;
+    }
     .floating-btn-wrapper > .btn:nth-child(3) {
         font-size: 12px;
     }

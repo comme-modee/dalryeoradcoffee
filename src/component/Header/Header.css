@@ -20,9 +20,14 @@
     text-align: center;
     padding: 14px 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    opacity: 0;
+}
+.header-main-page {
     animation: dropHeader 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
     animation-delay: 2s; 
-    opacity: 0;
+}
+.header-other-page {
+    opacity: 1;
 }
 .header > .logo {
     width: 70px;
