@@ -1,6 +1,5 @@
 import React from 'react'
 import './css/Roza.css'
-import rosa119 from '../asset/img/rosa119-thumbnail.jpg'
 
 const Roza = () => {
   return (
