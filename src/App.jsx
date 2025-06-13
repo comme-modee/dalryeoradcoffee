@@ -13,6 +13,7 @@ import Service from './routes/Service';
 import Menu from './routes/Menu';
 import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
+import FloatingButtons from './component/FloatingButtons/FloatingButtons';
 
 function App() {
   const { pathname } = useLocation();
@@ -23,18 +24,19 @@ function App() {
 
   return (
     <React.Fragment>
-       <Header/>
-        <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/ceo" element={<Ceo />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/momostable" element={<Momo />} />
-            <Route path="/roza119" element={<Roza />} />
-            <Route path="/breathbeside" element={<Breath />} />
-        </Routes>
-        <Footer/>
+      <FloatingButtons/>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ceo" element={<Ceo />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/momostable" element={<Momo />} />
+        <Route path="/roza119" element={<Roza />} />
+        <Route path="/breathbeside" element={<Breath />} />
+      </Routes>
+      <Footer/>
     </React.Fragment>
   );
 }
