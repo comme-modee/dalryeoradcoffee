@@ -1,25 +1,23 @@
 .container-service {
     padding: 70px 0px 0px 0px;
 }
-.container-service > .intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-service > .intro-img {
     width: 100%;
-    padding: 60px 0px;
-    background-color: #bad8ff;
+    height: 350px;
+    background: url('/src/asset/img/service-0.jpg') no-repeat center 46%/cover;
 }
-.container-service > .intro > .text {
+.container-service > .content > .text {
     width: 100%;
     max-width: 1080px;
-    padding: 50px;
+    padding: 0px 30px;
     text-align: center;
+    margin: 0 auto;
 }
-.container-service > .intro > .text > p:nth-child(1) {
+.container-service > .content > .text > p:nth-child(1) {
     font-family: 'Pretendard-M';
     font-size: 24px;
 }
-.container-service > .intro > .text > p:nth-child(2) {
+.container-service > .content > .text > p:nth-child(2) {
     font-family: 'Pretendard-B';
     font-size: 40px;
     padding-top: 10px;
@@ -44,7 +42,7 @@
     width: fit-content;
     padding: 12px 30px;
     border-radius: 50px;
-    border: 2px solid #4a00ff;
+    background-color: rgb(206, 222, 255);
     font-family: 'Pretendard-SB';
     font-size: 30px;
 }
@@ -63,18 +61,18 @@
     height: 100%;
     border-radius: 10px;
 }
-.container-service > .content > .item:nth-child(1) > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(1) > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(1) > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-5.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(2) > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-2.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(2) > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(2) > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-4.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(3) > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-12.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(3) > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-9.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(3) > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-8.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(4) > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-10.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(4) > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-11.jpg') center center/cover; }
-.container-service > .content > .item:nth-child(4) > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-1.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-5.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-2.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-4.jpg') center center/cover; }
+.container-service > .content > .item-3 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-12.jpg') center center/cover; }
+.container-service > .content > .item-3 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-9.jpg') center center/cover; }
+.container-service > .content > .item-3 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-8.jpg') center center/cover; }
+.container-service > .content > .item-4 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-10.jpg') center center/cover; }
+.container-service > .content > .item-4 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-11.jpg') center center/cover; }
+.container-service > .content > .item-4 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-1.jpg') center center/cover; }
 
 .container-service > .content > .item > .img-container > .img > span {
     position: absolute;
@@ -87,13 +85,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container-service > .intro {
+    .container-service > .intro-img {
+        height: 250px;
+    }
+    .container-service > .content {
         padding: 20px 0px;
     }
-    .container-service > .intro > .text > p:nth-child(1) {
+    .container-service > .content > .text > p:nth-child(1) {
         font-size: 20px;
     }
-    .container-service > .intro > .text > p:nth-child(2) {
+    .container-service > .content > .text > p:nth-child(2) {
         font-size: 32px;
     }
     .container-service > .content {
@@ -118,8 +119,8 @@
     .container-service {
         padding: 60px 0px 0px 0px;
     }
-    .container-service > .intro {
-        padding: 0px;
+    .container-service > .intro-img {
+        height: 200px;
     }
     .container-service > .content {
         padding: 30px 10px;

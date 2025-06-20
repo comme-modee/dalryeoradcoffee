@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
         <Link to='/menu' className='submenu' onClick={() => setOpen(false)}>메뉴 안내</Link>
         <Link to='/momostable' className='menu-item' onClick={() => setOpen(false)}>모모스테이블</Link>
         <Link to='/roza119' className='menu-item' onClick={() => setOpen(false)}>로자119</Link>
-        <Link to='/breathbeside' className='menu-item' onClick={() => setOpen(false)}>쉼곁숨 프로젝트</Link>
+        {/* <Link to='/breathbeside' className='menu-item' onClick={() => setOpen(false)}>쉼곁숨 프로젝트</Link> */}
       </nav>
     </div>
   )
