@@ -6,7 +6,7 @@ import './css/Menu.css'
 import coffeeImgBasic from '../asset/img/dal-menu-basic.jpg'
 import coffeeImgPremium from '../asset/img/dal-menu-premium.jpg'
 import coffeeImgSupremo from '../asset/img/dal-menu-supremo.jpg'
-import dessert from '../asset/img/dal-dessert.jpg'
+import waffle from '../asset/img/menu-waffle-2.jpg'
 import summerMenu1 from '../asset/img/summer-menu-1.jpg'
 import winterMenu1 from '../asset/img/winter-menu-1.jpg'
 import winterMenu2 from '../asset/img/winter-menu-2.jpg'
@@ -28,12 +28,12 @@ const Menu = () => {
 
   return (
     <div className='container container-menu'>
-        <div className='intro'>
-          <div className='text'>
-            <p>{selectedMenu}</p>
-            <p>{menuContents[selectedMenu]}</p>
-          </div>
-        </div>
+        <div className={
+            `intro-img 
+            ${selectedMenu === '커피/음료' ? 'intro-img-drink' :
+              selectedMenu === '간식' ? 'intro-img-dessert' :
+              selectedMenu === '시즌메뉴' ? 'intro-img-season' : ''
+            }`}></div>
         <div className='menu-bar'>
           <ul>
             {Object.keys(menuContents).map((menu) => (
@@ -48,37 +48,86 @@ const Menu = () => {
           </ul>
         </div>
         <div className='content'>
-          <div className='inner'>
-            {selectedMenu === '커피/음료' ? 
-              <React.Fragment>
-                <img src={coffeeImgBasic} alt='달려라커피-메뉴-베이직'/>
-                <img src={coffeeImgPremium} alt='달려라커피-메뉴-프리미엄'/>
-                <img src={coffeeImgSupremo} alt='달려라커피-메뉴-수프리모'/>
-              </React.Fragment>
-            :
-            selectedMenu === '간식' ?
-              <React.Fragment>
-                <img src={dessert} alt='달려라커피-디저트'/>
-              </React.Fragment>
-            :
-            selectedMenu === '식사(밥차)' ?
-              <React.Fragment>
-                준비중
-              </React.Fragment>
-            :
-            selectedMenu === '시즌메뉴' ?
-              <React.Fragment>
-                <p className='title'>여름시즌메뉴</p>
-                <img src={summerMenu1} alt='달려라커피-여름메뉴'/>
-                <p className='title'>겨울시즌메뉴</p>
-                <img src={winterMenu1} alt='달려라커피-겨울메뉴'/>
-                <img src={winterMenu2} alt='달려라커피-겨울메뉴'/>
-              </React.Fragment>
-            :
-              <React.Fragment>
-                전체메뉴
-              </React.Fragment>}
-          </div>
+            <div className='title'>
+                <p>{selectedMenu}</p>
+                <p>{menuContents[selectedMenu]}</p>
+            </div>
+            <div className='inner'>
+                {selectedMenu === '커피/음료' ? 
+                    <React.Fragment>
+                        <img src={coffeeImgBasic} alt='달려라커피-메뉴-베이직'/>
+                        <img src={coffeeImgPremium} alt='달려라커피-메뉴-프리미엄'/>
+                        <img src={coffeeImgSupremo} alt='달려라커피-메뉴-수프리모'/>
+                    </React.Fragment>
+                :
+                selectedMenu === '간식' ?
+                    <React.Fragment>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img waffle'></div>
+                                <div className='description'>
+                                    <div className='name'>리에주와플</div>
+                                    <div className='price'>3,500원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img fruit'>
+    
+                                </div>
+                                <div className='description'>
+                                    <div className='name'>컵과일</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img bingsu'>
+
+                                </div>
+                                <div className='description'>
+                                    <div className='name'>컵빙수</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sandwich'>
+
+                                </div>
+                                <div className='description'>
+                                    <div className='name'>샌드위치</div>
+                                    <div className='price'>하프 4,500원 / 풀 8,000원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img tiramisu'>
+
+                                </div>
+                                <div className='description'>
+                                    <div className='name'>티라미수 컵케이크</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <img src={dessert} alt='달려라커피-디저트'/> */}
+                    </React.Fragment>
+                :
+                selectedMenu === '식사(밥차)' ?
+                    <React.Fragment>
+                        준비중
+                    </React.Fragment>
+                :
+                selectedMenu === '시즌메뉴' ?
+                    <React.Fragment>
+                        <p className='title'>여름시즌메뉴</p>
+                        <img src={summerMenu1} alt='달려라커피-여름메뉴'/>
+                        <p className='title'>겨울시즌메뉴</p>
+                        <img src={winterMenu1} alt='달려라커피-겨울메뉴'/>
+                        <img src={winterMenu2} alt='달려라커피-겨울메뉴'/>
+                    </React.Fragment>
+                :
+                    <React.Fragment>
+                        전체메뉴
+                    </React.Fragment>}
+            </div>
         </div>
     </div>
   )

@@ -1,29 +1,38 @@
 .container-menu {
     padding: 70px 0px 0px 0px;
 }
-.container-menu > .intro {
+.container-menu > .intro-img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 60px 0px;
-    background-color: #ffec8e;
+    height: 350px;
 }
-.container-menu > .intro > .text {
+.container-menu > .intro-img-drink {
+    background: url('/src/asset/img/menu-drink.jpg') no-repeat center/cover;
+}
+.container-menu > .intro-img-dessert {
+    background: url('/src/asset/img/menu-dessert.jpg') no-repeat center/cover;
+}
+.container-menu > .intro-img-season {
+    background: url('/src/asset/img/menu-season-1.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .title {
     width: 100%;
     max-width: 1080px;
-    padding: 50px;
     text-align: center;
 }
-.container-menu > .intro > .text > p:nth-child(1) {
+.container-menu > .content > .title > p:nth-child(1) {
     font-family: 'Pretendard-B';
-    font-size: 40px;
+    font-size: 32px;
+    padding-top: 0px;
 }
-.container-menu > .intro > .text > p:nth-child(2) {
+.container-menu > .content > .title > p:nth-child(2) {
     font-family: 'Pretendard-M';
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 10px;
     word-break: keep-all;
+    line-height: normal;
 }
 .container-menu > .menu-bar {
     width: 100%;
@@ -63,6 +72,46 @@
     font-size: 40px;
     padding: 30px 0px;
 }
+.container-menu > .content > .inner > .item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+.container-menu > .content > .inner > .item-wrapper > .item {
+    width: calc(50% - 10px);
+    height: 450px;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .img {
+    width: 100%;
+    height: 80%;
+    border-radius: 16px;
+    border: 1px solid #d3d3d3;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .waffle {
+    background: url('/src//asset/img/menu-waffle-2.jpg') no-repeat center 65%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .fruit {
+    background: url('/src//asset/img/menu-fruit.jpg') no-repeat center 90%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .bingsu {
+    background: url('/src//asset/img/menu-bingsu.jpg') no-repeat center top/contain;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .sandwich {
+    background: url('/src//asset/img/menu-sandwich.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .tiramisu {
+    background: url('/src//asset/img/menu-tiramisu.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .description > .name {
+    font-family: 'Pretendard-B';
+    font-size: 22px;
+    padding: 14px 0px 6px 0px;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .description > .price {
+    font-size: 18px;
+}
 
 @media screen and (max-width: 768px) {
     .container-menu > .intro {
@@ -77,19 +126,11 @@
     .container-menu > .content {
         padding: 30px 10px;
     }
-    .container-menu > .content > .item {
-        gap: 14px;
+    .container-menu > .content > .inner > .item-wrapper > .item {
+        height: 380px;
     }
-    .container-menu > .content > .item > .title {
-        font-size: 20px;
-        padding: 10px 24px;
-    }
-    .container-menu > .content > .item > .sub-title {
-        font-size: 16px;
-    }
-    .container-menu > .content > .item > .img-container {
-        flex-direction: column;
-        height: 180vw;
+    .container-menu > .content > .inner > .item-wrapper > .item > .img {
+        height: 76%;
     }
 }
 @media screen and (max-width: 540px) {
@@ -104,5 +145,8 @@
     }
     .container-menu > .content > .inner > .title {
         font-size: 26px;
+    }
+    .container-menu > .content > .inner > .item-wrapper > .item {
+        width: 100%;
     }
 }

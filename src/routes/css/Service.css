@@ -127,6 +127,12 @@
     .container-service > .content {
         padding: 30px 10px;
     }
+    .container-service > .content > .text {
+        padding: 0px 10px;
+    }
+    .container-service > .content > .text > p:nth-child(2) {
+        font-size: 24px;
+    }
     .container-service > .content > .item > .img-container {
         height: 220vw;
     }
