@@ -15,11 +15,11 @@
 }
 .container-service > .content > .text > p:nth-child(1) {
     font-family: 'Pretendard-M';
-    font-size: 24px;
+    font-size: 20px;
 }
 .container-service > .content > .text > p:nth-child(2) {
     font-family: 'Pretendard-B';
-    font-size: 40px;
+    font-size: 32px;
     padding-top: 10px;
 }
 .container-service > .content {
@@ -36,18 +36,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 }
 .container-service > .content > .item > .title {
     width: fit-content;
     padding: 12px 30px;
     border-radius: 50px;
-    background-color: rgb(206, 222, 255);
+    background: linear-gradient(45deg,rgb(150, 205, 227) 0%, rgb(158, 225, 184) 30%, rgb(255, 243, 134) 100%);
     font-family: 'Pretendard-SB';
-    font-size: 30px;
+    font-size: 24px;
 }
 .container-service > .content > .item > .sub-title {
-    font-size: 20px;
+    font-size: 18px;
 }
 .container-service > .content > .item > .img-container {
     display: flex;
@@ -90,12 +90,14 @@
     }
     .container-service > .content {
         padding: 20px 0px;
+        gap: 40px;
     }
     .container-service > .content > .text > p:nth-child(1) {
-        font-size: 20px;
+        font-size: 16px;
     }
     .container-service > .content > .text > p:nth-child(2) {
-        font-size: 32px;
+        font-size: 26px;
+        padding-top: 6px;
     }
     .container-service > .content {
         padding: 30px;

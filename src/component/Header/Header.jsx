@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Header.css'
 import { Link, useLocation } from 'react-router-dom'
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu'
 
 const Header = () => {
     const { pathname } = useLocation();
-
-    useEffect(()=>{
-        console.log('지금 어디?:', pathname)
-    },[pathname])
 
     return (
         <div className={`header ${pathname === '/' ? 'header-main-page' : 'header-other-page'}`}>
