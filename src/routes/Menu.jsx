@@ -6,7 +6,6 @@ import './css/Menu.css'
 import coffeeImgBasic from '../asset/img/dal-menu-basic.jpg'
 import coffeeImgPremium from '../asset/img/dal-menu-premium.jpg'
 import coffeeImgSupremo from '../asset/img/dal-menu-supremo.jpg'
-import waffle from '../asset/img/menu-waffle-2.jpg'
 import summerMenu1 from '../asset/img/summer-menu-1.jpg'
 import winterMenu1 from '../asset/img/winter-menu-1.jpg'
 import winterMenu2 from '../asset/img/winter-menu-2.jpg'
@@ -107,7 +106,6 @@ const Menu = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <img src={dessert} alt='달려라커피-디저트'/> */}
                     </React.Fragment>
                 :
                 selectedMenu === '식사(밥차)' ?
