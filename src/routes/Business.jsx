@@ -1,44 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/Common.css'
 import './css/Business.css'
-import businessImage1 from '../asset/img/ppt/business001.jpg';
-import businessImage2 from '../asset/img/ppt/business002.jpg';
-import businessImage3 from '../asset/img/ppt/business003.jpg';
-import businessImage4 from '../asset/img/ppt/business004.jpg';
-import businessImage5 from '../asset/img/ppt/business005.jpg';
-import businessImage6 from '../asset/img/ppt/business006.jpg';
-import businessImage7 from '../asset/img/ppt/business007.jpg';
-import businessImage8 from '../asset/img/ppt/business008.jpg';
-import businessImage9 from '../asset/img/ppt/business009.jpg';
-import businessImage10 from '../asset/img/ppt/business010.jpg';
-import businessImage11 from '../asset/img/ppt/business011.jpg';
-import businessImage12 from '../asset/img/ppt/business012.jpg';
-import businessImage13 from '../asset/img/ppt/business013.jpg';
-import businessImage14 from '../asset/img/ppt/business014.jpg';
-import businessImage15 from '../asset/img/ppt/business015.jpg';
-import businessImage16 from '../asset/img/ppt/business016.jpg';
-import businessImage17 from '../asset/img/ppt/business017.jpg';
+import businessBreathingImage1 from '../asset/img/ppt/business-breathing-01.jpg';
+import businessBreathingImage2 from '../asset/img/ppt/business-breathing-02.jpg';
+import businessWaldenImage1 from '../asset/img/ppt/business-walden-01.jpg';
 
 const Business = () => {
-  return (
+    const [activeTab, setActiveTab] = useState('브리딩커피바');
+
+return (
     <div className='container-business'>
-        <img src={businessImage1} alt='사업소개 이미지'/>
-        <img src={businessImage2} alt='사업소개 이미지'/>
-        <img src={businessImage3} alt='사업소개 이미지'/>
-        <img src={businessImage4} alt='사업소개 이미지'/>
-        <img src={businessImage5} alt='사업소개 이미지'/>
-        <img src={businessImage6} alt='사업소개 이미지'/>
-        <img src={businessImage7} alt='사업소개 이미지'/>
-        <img src={businessImage8} alt='사업소개 이미지'/>
-        <img src={businessImage9} alt='사업소개 이미지'/>
-        <img src={businessImage10} alt='사업소개 이미지'/>
-        <img src={businessImage11} alt='사업소개 이미지'/>
-        <img src={businessImage12} alt='사업소개 이미지'/>
-        <img src={businessImage13} alt='사업소개 이미지'/>
-        <img src={businessImage14} alt='사업소개 이미지'/>
-        <img src={businessImage15} alt='사업소개 이미지'/>
-        <img src={businessImage16} alt='사업소개 이미지'/>
-        <img src={businessImage17} alt='사업소개 이미지'/>
+        <div className={`intro-img ${activeTab === '브리딩커피바' ? 'intro-img-breathing' : 'intro-img-walden'}`}></div>
+        <div className='content'>
+            <div className='item item-1'>
+                <div className='title-container'>
+                    <div
+                        className={`title ${activeTab === '브리딩커피바' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('브리딩커피바')}
+                    >
+                        브리딩커피바 소셜프랜차이즈 사업
+                    </div>
+                    <div
+                        className={`title ${activeTab === '월든' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('월든')}
+                    >
+                        월든 청년숲학교
+                    </div>
+                </div>
+                <div className='img-container'>
+                    {activeTab === '브리딩커피바' && (
+                    <>
+                        <img src={businessBreathingImage1} alt='브리딩 이미지1' />
+                        <img src={businessBreathingImage2} alt='브리딩 이미지2' />
+                    </>
+                    )}
+                    {activeTab === '월든' && (
+                    <>
+                        <img src={businessWaldenImage1} alt='월든 이미지' />
+                    </>
+                    )}
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
