@@ -38,12 +38,17 @@ const HamburgerMenu = () => {
       </div>
 
       <nav className={`hamburger-dropdown ${open ? 'open' : ''}`}>
-        <p className='menu-item'>달려라커피</p>
-        <Link to='/about' className='submenu' onClick={() => setOpen(false)}>회사 소개</Link>
+        {/* <p className='menu-item'>달려라커피</p> */}
+        <Link to='/about' className='menu-item' onClick={() => setOpen(false)}>회사 소개</Link>
+        <Link to='/ceo' className='menu-item' onClick={() => setOpen(false)}>대표 경력 및 성과</Link>
+        <Link to='/business' className='menu-item' onClick={() => setOpen(false)}>사업 소개</Link>
+        <Link to='/service' className='menu-item' onClick={() => setOpen(false)}>서비스 소개</Link>
+        <Link to='/menu' className='menu-item' onClick={() => setOpen(false)}>메뉴 안내</Link>
+        {/* <Link to='/about' className='submenu' onClick={() => setOpen(false)}>회사 소개</Link>
         <Link to='/ceo' className='submenu' onClick={() => setOpen(false)}>대표 경력 및 성과</Link>
         <Link to='/business' className='submenu' onClick={() => setOpen(false)}>사업 소개</Link>
         <Link to='/service' className='submenu' onClick={() => setOpen(false)}>서비스 소개</Link>
-        <Link to='/menu' className='submenu' onClick={() => setOpen(false)}>메뉴 안내</Link>
+        <Link to='/menu' className='submenu' onClick={() => setOpen(false)}>메뉴 안내</Link> */}
         <Link to='/momostable' className='menu-item' onClick={() => setOpen(false)}>모모스테이블</Link>
         <Link to='/roza119' className='menu-item' onClick={() => setOpen(false)}>로자119</Link>
         {/* <Link to='/breathbeside' className='menu-item' onClick={() => setOpen(false)}>쉼곁숨 프로젝트</Link> */}

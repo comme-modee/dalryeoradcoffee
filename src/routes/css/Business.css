@@ -6,7 +6,7 @@
     height: 350px;
 }
 .container-business > .intro-img-breathing {
-    background: url('/src/asset/img/ppt/business-breathing-bg.jpg') no-repeat center 62%/cover;
+    background: url('/src/asset/img/ppt/business-breathing-bg.jpg') no-repeat center/cover;
 }
 .container-business > .intro-img-walden {
     background: url('/src/asset/img/ppt/business-walden-bg.jpg') no-repeat center/cover;
