@@ -15,6 +15,7 @@ const Header = () => {
                     <div className='dropdown'>
                         <Link to='/about'>회사 소개</Link>
                         <Link to='/ceo'>대표 경력 및 성과</Link>
+                        <Link to='/business'>사업 소개</Link>
                         <Link to='/service'>서비스 소개</Link>
                         <Link to='/menu'>메뉴 소개</Link>
                     </div>

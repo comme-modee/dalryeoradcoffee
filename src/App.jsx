@@ -9,6 +9,7 @@ import Roza from './routes/Roza';
 import Breath from './routes/Breath';
 import About from './routes/About';
 import Ceo from './routes/Ceo';
+import Business from './routes/Business';
 import Service from './routes/Service';
 import Menu from './routes/Menu';
 import Header from './component/Header/Header';
@@ -30,6 +31,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/ceo" element={<Ceo />} />
+        <Route path="/business" element={<Business />} />
         <Route path="/service" element={<Service />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/momostable" element={<Momo />} />
