@@ -17,21 +17,18 @@
     gap: 60px;
     width: 100%;
     max-width: 1280px;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     padding: 50px;
 }
-.container-business > .content > .item {
+.container-business > .content > .title-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-}
-.container-business > .content > .item > .title-container {
-    display: flex;
     gap: 20px;
 }
-.container-business > .content > .item > .title-container > .title {
+.container-business > .content > .title-container > .title {
     width: fit-content;
     padding: 12px 30px;
     border-radius: 50px;
@@ -40,10 +37,10 @@
     font-size: 24px;
     cursor: pointer;
 }
-.container-business > .content > .item > .title-container > .title:hover {
+.container-business > .content > .title-container > .title:hover {
     background: linear-gradient(45deg,rgb(150, 205, 227) 0%, rgb(158, 225, 184) 30%, rgb(255, 243, 134) 100%);
 }
-.container-business > .content > .item > .title-container > .active {
+.container-business > .content > .title-container > .active {
     width: fit-content;
     padding: 12px 30px;
     border-radius: 50px;
@@ -51,11 +48,12 @@
     font-family: 'Pretendard-SB';
     font-size: 24px;
 }
-.container-business > .content > .item > .img-container {
+.container-business > .content > .img-container {
     display: block;
 }
-.container-business > .content > .item > .img-container > img {
+.container-business > .content > .img-container > img {
     width: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -69,15 +67,11 @@
     .container-business > .content {
         padding: 30px;
     }
-    .container-business > .content > .item {
-        gap: 14px;
-    }
-    .container-business > .content > .item > .title-container {
+    .container-business > .content > .title-container {
         flex-direction: column;
-        align-items: center;
         gap: 10px;
     }
-    .container-business > .content > .item > .title-container > .title {
+    .container-business > .content > .title-container > .title {
         font-size: 20px;
         padding: 10px 24px;
     }
@@ -90,12 +84,9 @@
         height: 200px;
     }
     .container-business > .content {
-        padding: 30px 10px;
+        padding: 30px 0px;
     }
-    .container-business > .content > .item > .img-container {
-        height: 220vw;
-    }
-    .container-business > .content > .item > .title-container > .title {
+    .container-business > .content > .title-container > .title {
         font-size: 18px;
     }
 }
