@@ -30,6 +30,9 @@ const Header = () => {
                     <Link to='/business' className='dropdown-trigger'>사업소개</Link>
                 </div>
                 <div className='menu-item'>
+                    <Link to='/revillage' className='dropdown-trigger'>Re:마을공작소</Link>
+                </div>
+                <div className='menu-item'>
                     <Link to='/service' className='dropdown-trigger'>서비스소개</Link>
                 </div>
                 <div className='menu-item'>

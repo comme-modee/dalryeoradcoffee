@@ -15,6 +15,7 @@ import Menu from './routes/Menu';
 import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
 import FloatingButtons from './component/FloatingButtons/FloatingButtons';
+import ReVillage from './routes/ReVillage';
 
 function App() {
   const { pathname } = useLocation();
@@ -37,6 +38,7 @@ function App() {
         <Route path="/momostable" element={<Momo />} />
         <Route path="/roza119" element={<Roza />} />
         <Route path="/breathbeside" element={<Breath />} />
+        <Route path="/revillage" element={<ReVillage />} />
       </Routes>
       <Footer/>
     </React.Fragment>
