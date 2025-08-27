@@ -2,11 +2,6 @@ import React, { useState } from 'react'
 import './css/Common.css'
 import './css/Menu.css'
 
-//img
-import summerMenu1 from '../asset/img/summer-menu-1.jpg'
-import winterMenu1 from '../asset/img/winter-menu-1.jpg'
-import winterMenu2 from '../asset/img/winter-menu-2.jpg'
-
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState('Caffeine Moment');
 
@@ -26,9 +21,10 @@ const Menu = () => {
     <div className='container container-menu'>
         <div className={
             `intro-img 
-            ${selectedMenu === 'Caffeine Moment' ? 'intro-img-drink' :
-              selectedMenu === 'Sweet Moment' ? 'intro-img-dessert' :
-              selectedMenu === 'Seasonal Moment' ? 'intro-img-season' : ''
+            ${selectedMenu === 'Caffeine Moment' ? 'intro-img-caffeine' :
+              selectedMenu === 'Comfort Moment' ? 'intro-img-comfort' :
+              selectedMenu === 'Sweet Moment' ? 'intro-img-sweet' :
+              selectedMenu === 'Seasonal Moment' ? 'intro-img-seasonal' : 'intro-img-hot'
             }`}></div>
         <div className='menu-bar'>
           <ul>
@@ -302,6 +298,72 @@ const Menu = () => {
                     
                     </React.Fragment>
                 :
+                selectedMenu === 'Comfort Moment' ?
+                    <React.Fragment>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img burger'></div>
+                                <div className='top'>
+                                    <div className='name'>달버거</div>
+                                    <div className='price'>7,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        두툼한 불고기 패티와 특제 소스로 한입 베어물면 스태프들의 속이 든든해지는 촬영장의 에너지 충전 버거
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img hotdog'></div>
+                                <div className='top'>
+                                    <div className='name'>달도그</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        현장의 바쁜 순간에도 손에 쥐고 한입 쏙! 육즙 팡팡 탱글 소세지에 눈이 확 떠지는 맛. 뉴욕 스타일 핫도그
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sandwich'></div>
+                                <div className='top'>
+                                    <div className='name'>달드위치</div>
+                                    <div className='price'>7,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        야외에서도 촬영차 안에서도 깔끔하게! 햄,치즈,에그와 싱그러운 채소의 완벽한 밸런스. 컵과일과 세트로 주문 가능
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img cobb-salad'></div>
+                                <div className='top'>
+                                    <div className='name'>콥샐러드</div>
+                                    <div className='price'>6,500원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        신선한 샐러드와 병아리콩, 계란, 아몬드 등 탄단지 밸런스 완벽한 현대인 맞춤 건강식!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img fruit'></div>
+                                <div className='top'>
+                                    <div className='name'>컵과일</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        잘 익은 제철 과일을 한 컵 가득 담아 상큼하게 비타민 충전 가능한 간편 디저트
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </React.Fragment>
+                :
                 selectedMenu === 'Sweet Moment' ?
                     <React.Fragment>
                         <div className='item-wrapper'>
@@ -398,22 +460,286 @@ const Menu = () => {
                         </div>
                     </React.Fragment>
                 :
-                selectedMenu === '식사(밥차)' ?
-                    <React.Fragment>
-                        준비중
-                    </React.Fragment>
-                :
                 selectedMenu === 'Seasonal Moment' ?
                     <React.Fragment>
-                        <p className='title'>여름시즌메뉴</p>
-                        <img src={summerMenu1} alt='달려라커피-여름메뉴'/>
-                        <p className='title'>겨울시즌메뉴</p>
-                        <img src={winterMenu1} alt='달려라커피-겨울메뉴'/>
-                        <img src={winterMenu2} alt='달려라커피-겨울메뉴'/>
+                        <div className='label label-summer'>여름 시즌 메뉴</div>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img bingsu'></div>
+                                <div className='top'>
+                                    <div className='name'>달빙수</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        시원하게 갈린 얼음에 국산 팥, 달콤한 연유, 상큼한 후르츠칵테일, 쫀득한 찹쌀떡까지! 한여름 더위는 달빙수로 타파하기!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img mango-bingsu'></div>
+                                <div className='top'>
+                                    <div className='name'>망고빙수</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        상큼 달콤한 망고가 한가득 들어간 빙수. 부드럽고 고소한 큐브치즈가 함께 들어있어 더욱 풍성한 맛을 느낄 수 있는 인기 빙수
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img strawberry-bingsu'></div>
+                                <div className='top'>
+                                    <div className='name'>딸기빙수</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        새콤달콤 딸기 과육이 가득 씹혀 상큼한 빙수. 달콤한 쿠앤크와 바삭한 건조딸기까지 더해져 식감과 맛, 두 마리 토끼를 다 잡았다!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img watermelon-juice'></div>
+                                <div className='top'>
+                                    <div className='name'>수박주스</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        수박이 통째로 들어간 생과일 주스. 시럽을 넣지 않고 100% 수박으로만 갈아낸 머리가 띵해지도록 시원한 여름 대표 음료
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='label label-winter'>겨울 시즌 메뉴</div>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img hoppang'></div>
+                                <div className='top'>
+                                    <div className='name'>호빵</div>
+                                    <div className='price'>3,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        <div className='option'>
+                                            종류: 팥, 피자, 야채
+                                        </div>
+                                        추운 겨울날 두 손 가득 온기를 전해주는 따끈따끈한 겨울 대표 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img fishcake'></div>
+                                <div className='top'>
+                                    <div className='name'>꼬치어묵</div>
+                                    <div className='price'>2개 3,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        어묵 함량 높은 고급 어묵과 직접 채수를 우려내 만든 수제 어묵국물로 겨울철 촬영장의 인기 메뉴!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img taiyaki'></div>
+                                <div className='top'>
+                                    <div className='name'>도미빵</div>
+                                    <div className='price'>2개 4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        <div className='option'>
+                                            종류: 팥, 슈크림
+                                        </div>
+                                        겨울 간식 하면 빠질 수 없는 것! 바로 도미빵!! 얇고 바삭한 반죽에 팥과 슈크림이 가득가득
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img vin-chaud'></div>
+                                <div className='top'>
+                                    <div className='name'>뱅쇼</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        <div className='option'>
+                                            무알콜 가능
+                                        </div>
+                                        사과, 오렌지, 자몽 등 달콤한 과일과 포도주, 계피 등 향신재료를 넣고 뜨끈하게 끓여 한 잔 마시면 온 몸이 따뜻해지는 음료
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </React.Fragment>
                 :
                     <React.Fragment>
-                        전체메뉴
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img tteokkochi'></div>
+                                <div className='top'>
+                                    <div className='name'>떡꼬치</div>
+                                    <div className='price'>3,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        매콤달콤한 양념이 쫄깃한 떡에 스며들어 중독성 있는 추억의 길거리 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sotteok-sotteok'></div>
+                                <div className='top'>
+                                    <div className='name'>소떡소떡</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        뽀드득뽀드득 통통소세지와 쫜득쫜득한 쌀떡에 매콤달콤 소스가 만나 언제 먹어도 맛있는 마성의 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img chicken-skewers'></div>
+                                <div className='top'>
+                                    <div className='name'>닭꼬치</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        불향 가득, 달콤 짭짤 소스가 배인 촉촉한 닭고기 꼬치
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sikhye'></div>
+                                <div className='top'>
+                                    <div className='name'>식혜</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        구수한 엿기름 향과 달콤함이 어우러진 해외팬들의 사랑 듬뿍 받는 한국의 전통음료
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img corn-dog'></div>
+                                <div className='top'>
+                                    <div className='name'>옛날핫도그</div>
+                                    <div className='price'>3,500원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        달달한 설탕에 케찹과 머스타드 소스 조합! 한번씩 꼭 생각나는 추억의 옛날 핫도그
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img potato-corn-dog'></div>
+                                <div className='top'>
+                                    <div className='name'>감자핫도그</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        감자튀김과 핫도그의 만남?! 바삭한 감자가 잔뜩 붙은 고소하고 쫀득한 핫도그
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img cheese-corn-dog'></div>
+                                <div className='top'>
+                                    <div className='name'>치즈핫도그</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        고소한 모짜렐라 치즈가 쭈욱 늘어나는 치즈 러버들의 영원한 사랑, 치즈핫도그!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img grilled-sausage'></div>
+                                <div className='top'>
+                                    <div className='name'>그릴소세지</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        탱글한 식감과 육즙이 터지는 맛, 은은한 불향이 입안을 감싸는 프리미엄 소시지
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='label label-korean-street-food'>분식</div>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img tteokbokki'></div>
+                                <div className='top'>
+                                    <div className='name'>떡볶이</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        쫄깃한 떡에 매콤달콤 양념이 진하게 배어 한입마다 중독되는 국민 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img fishcake'></div>
+                                <div className='top'>
+                                    <div className='name'>꼬치어묵</div>
+                                    <div className='price'>2개 3,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        어묵 함량 높은 고급 어묵과 직접 채수를 우려내 만든 수제 어묵국물로 겨울철 촬영장의 인기 메뉴!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sundae'></div>
+                                <div className='top'>
+                                    <div className='name'>순대</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        김이 모락모락, 고소하고 부드러운 속재료와 쫄깃한 피가 어우러진 대표 분식 메뉴
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='label label-korean-street-food'>분식 세트 메뉴</div>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img set1'></div>
+                                <div className='top'>
+                                    <div className='name'>[세트1] 떡볶이+어묵</div>
+                                    <div className='price'>7,000원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img set2'></div>
+                                <div className='top'>
+                                    <div className='name'>[세트2] 떡볶이+순대</div>
+                                    <div className='price'>9,000원</div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img set3'></div>
+                                <div className='top'>
+                                    <div className='name'>[세트3] 떡볶이+어묵+순대</div>
+                                    <div className='price'>12,000원</div>
+                                </div>
+                            </div>
+                        </div>
                     </React.Fragment>}
             </div>
         </div>

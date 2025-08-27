@@ -8,14 +8,20 @@
     width: 100%;
     height: 350px;
 }
-.container-menu > .intro-img-drink {
-    background: url('/src/asset/img/menu-drink.jpg') no-repeat center/cover;
+.container-menu > .intro-img-caffeine {
+    background: url('/src/asset/img/menu-caffeine.jpg') no-repeat center/cover;
 }
-.container-menu > .intro-img-dessert {
-    background: url('/src/asset/img/menu-dessert.jpg') no-repeat center/cover;
+.container-menu > .intro-img-comfort {
+    background: url('/src/asset/img/menu-comfort.jpg') no-repeat center/cover;
 }
-.container-menu > .intro-img-season {
-    background: url('/src/asset/img/menu-season-1.jpg') no-repeat center/cover;
+.container-menu > .intro-img-sweet {
+    background: url('/src/asset/img/menu-sweet.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .intro-img-seasonal {
+    background: url('/src/asset/img/menu-seasonal.jpg') no-repeat center/cover;
+}
+.container-menu > .intro-img-hot {
+    background: url('/src/asset/img/menu-hot.jpg') no-repeat center/cover;
 }
 .container-menu > .content > .title {
     width: 100%;
@@ -30,7 +36,7 @@
 .container-menu > .content > .title > p:nth-child(2) {
     font-family: 'Pretendard-M';
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 6px;
     word-break: keep-all;
     line-height: normal;
 }
@@ -140,6 +146,23 @@
 
 
 
+.container-menu > .content > .inner > .label {
+    font-size: 20px;
+    font-family: 'Pretendard-B';
+    padding: 10px 24px;
+    color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 14px;
+}
+.container-menu > .content > .inner > .label-summer {
+    background-color: #0092ff;
+}
+.container-menu > .content > .inner > .label-winter,
+.container-menu > .content > .inner > .label-korean-street-food {
+    background-color: #8c2c2c;
+}
 .container-menu > .content > .inner > .item-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +179,28 @@
     height: 60%;
     border-radius: 16px;
     border: 1px solid #d3d3d3;
+
+
 }
+
+
+/* 컴포트 모먼트 이미지 */
+.container-menu > .content > .inner > .item-wrapper > .item > .burger {
+    background: url('/src//asset/img/menu-burger.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .hotdog {
+    background: url('/src//asset/img/menu-hotdog.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .sandwich {
+    background: url('/src//asset/img/menu-sandwich.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .cobb-salad {
+    background: url('/src//asset/img/menu-cobb-salad.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .fruit {
+    background: url('/src//asset/img/menu-fruit.jpg') no-repeat center 90%/cover;
+}
+/* 컴포트 모먼트 이미지 */
 
 
 /* 스위트 모먼트 이미지 */
@@ -184,15 +228,77 @@
 /* 스위트 모먼트 이미지 */
 
 
-.container-menu > .content > .inner > .item-wrapper > .item > .fruit {
-    background: url('/src//asset/img/menu-fruit.jpg') no-repeat center 90%/cover;
-}
+/* 시즈널 모먼트 이미지 */
 .container-menu > .content > .inner > .item-wrapper > .item > .bingsu {
-    background: url('/src//asset/img/menu-bingsu.jpg') no-repeat center top/contain;
+    background: url('/src//asset/img/menu-bingsu.jpg') no-repeat center 30%/cover;
 }
-.container-menu > .content > .inner > .item-wrapper > .item > .sandwich {
-    background: url('/src//asset/img/menu-sandwich.jpg') no-repeat center/cover;
+.container-menu > .content > .inner > .item-wrapper > .item > .mango-bingsu {
+    background: url('/src//asset/img/menu-mango-bingsu.jpg') no-repeat center 30%/cover;
 }
+.container-menu > .content > .inner > .item-wrapper > .item > .strawberry-bingsu {
+    background: url('/src//asset/img/menu-strawberry-bingsu.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .watermelon-juice {
+    background: url('/src//asset/img/menu-watermelon-juice.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .hoppang {
+    background: url('/src//asset/img/menu-hoppang.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .fishcake {
+    background: url('/src//asset/img/menu-fishcake.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .taiyaki {
+    background: url('/src//asset/img/menu-taiyaki.jpg') no-repeat center 30%/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .vin-chaud {
+    background: url('/src//asset/img/menu-vin-chaud.jpg') no-repeat center 30%/cover;
+}
+/* 시즈널 모먼트 이미지 */
+
+
+/* 핫 모먼트 이미지 */
+.container-menu > .content > .inner > .item-wrapper > .item > .tteokkochi {
+    background: url('/src//asset/img/menu-tteokkochi.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .sotteok-sotteok {
+    background: url('/src//asset/img/menu-sotteok-sotteok.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .chicken-skewers {
+    background: url('/src//asset/img/menu-chicken-skewers.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .sikhye {
+    background: url('/src//asset/img/menu-sikhye.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .corn-dog {
+    background: url('/src//asset/img/menu-corn-dog.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .potato-corn-dog {
+    background: url('/src//asset/img/menu-potato-corn-dog.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .cheese-corn-dog {
+    background: url('/src//asset/img/menu-cheese-corn-dog.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .grilled-sausage {
+    background: url('/src//asset/img/menu-grilled-sausage.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .tteokbokki {
+    background: url('/src//asset/img/menu-tteokbokki.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .sundae {
+    background: url('/src//asset/img/menu-sundae.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .set1 {
+    background: url('/src//asset/img/menu-set1.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .set2 {
+    background: url('/src//asset/img/menu-set2.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .set3 {
+    background: url('/src//asset/img/menu-set3.jpg') no-repeat center/cover;
+}
+/* 핫 모먼트 이미지 */
+
+
 .container-menu > .content > .inner > .item-wrapper > .item > .top {
     display: flex;
     justify-content: space-between;
@@ -267,6 +373,9 @@
 
     .container-menu > .content > .inner > .item-wrapper > .item {
         width: 100%;
-        height: 350px;
+        height: 400px;
+    }
+    .container-menu > .content > .inner > .item-wrapper > .item > .img {
+        height: 65%;
     }
 }
