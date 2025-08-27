@@ -54,7 +54,7 @@ const Menu = () => {
                         <div className='menu menu-basic'>
                             <p className='title'>
                                 <span>[BASIC] 베이직</span>
-                                <span>3.5</span>
+                                <span>3,500원</span>
                             </p>
                             <p className='description'>
                                 <div className='highlight'>
@@ -116,7 +116,7 @@ const Menu = () => {
                         <div className='menu menu-primium'>
                             <p className='title'>
                                 <span>[PRIMIUM] 프리미엄</span>
-                                <span>4.0</span>
+                                <span>4,000원</span>
                             </p>
                             <p className='description'>
                                 <div className='highlight'>
@@ -194,7 +194,7 @@ const Menu = () => {
                         <div className='menu menu-signature'>
                             <p className='title'>
                                 <span>[SIGNATURE] 시그니처</span>
-                                <span>4.5</span>
+                                <span>4,500원</span>
                             </p>
                             <p className='description'>
                                 <div className='highlight'>
@@ -307,45 +307,92 @@ const Menu = () => {
                         <div className='item-wrapper'>
                             <div className='item'>
                                 <div className='img waffle'></div>
-                                <div className='description'>
+                                <div className='top'>
                                     <div className='name'>리에주와플</div>
                                     <div className='price'>3,500원</div>
                                 </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img fruit'>
-    
-                                </div>
-                                <div className='description'>
-                                    <div className='name'>컵과일</div>
-                                    <div className='price'>5,000원</div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img bingsu'>
-
-                                </div>
-                                <div className='description'>
-                                    <div className='name'>컵빙수</div>
-                                    <div className='price'>5,000원</div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        <div className='option'>
+                                            초코, 딸기, 화이트초코, 말차 추가 (+0.5)
+                                        </div>
+                                        직접 반죽한 생지를 당일 발효해 구워낸 겉바속촉 벨기에 정통 와플
+                                    </div>
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='img sandwich'>
-
+                                <div className='img churros'></div>
+                                <div className='top'>
+                                    <div className='name'>츄러스</div>
+                                    <div className='price'>4,000원</div>
                                 </div>
-                                <div className='description'>
-                                    <div className='name'>샌드위치</div>
-                                    <div className='price'>하프 4,500원 / 풀 8,000원</div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        <div className='option'>
+                                            초코디핑소스 추가 (+1.0)
+                                        </div>
+                                        향긋한 시나몬과 달콤한 설탕에 바삭쫀득한 식감까지! 놀이공원의 명불허전 대표간식!
+                                    </div>
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='img tiramisu'>
-
+                                <div className='img financier'></div>
+                                <div className='top'>
+                                    <div className='name'>휘낭시에</div>
+                                    <div className='price'>3,000원</div>
                                 </div>
-                                <div className='description'>
-                                    <div className='name'>티라미수 컵케이크</div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        헤이즐넛 버터의 고소한 풍미가 입 안에 가득! 커피와 찰떡궁합인 쫀득바삭촉촉 베이커리
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img madeleine'></div>
+                                <div className='top'>
+                                    <div className='name'>마들렌</div>
+                                    <div className='price'>3,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        촉촉하고 부드러운 식감에 고소한 버터향까지! 먹자마자 행복해지는 프랑스 대표 구움과자
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img chocochip-cookie'></div>
+                                <div className='top'>
+                                    <div className='name'>초코칩쿠키</div>
+                                    <div className='price'>2,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        바삭한 쿠키 속에 달콤한 초코칩이 가득! 촬영장 당충전은 초코칩쿠키에게 맡겨라!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img tiramisu'></div>
+                                <div className='top'>
+                                    <div className='name'>티라미수</div>
                                     <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        부드럽고 달콤한 마스카포네 치즈와 달려라커피의 향긋하고 진한 에스프레소, 쌉싸래한 코코아가루가 더해진 이탈리아 디저트
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img snack-bag'></div>
+                                <div className='top'>
+                                    <div className='name'>달려라 간식백</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        인기 과자와 간식들을 골라 담은 간식꾸러미! 다양한 간식을 한번에 즐길 수 있는 알찬 구성. 단체선물로도 인기만점인 핫 아이템
+                                    </div>
                                 </div>
                             </div>
                         </div>

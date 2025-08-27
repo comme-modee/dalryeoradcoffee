@@ -140,7 +140,7 @@
 
 
 
-.container-menu > .content > .inner > .menu > .item-wrapper {
+.container-menu > .content > .inner > .item-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -149,17 +149,41 @@
 }
 .container-menu > .content > .inner > .item-wrapper > .item {
     width: calc(50% - 10px);
-    height: 450px;
+    height: 500px;
 }
 .container-menu > .content > .inner > .item-wrapper > .item > .img {
     width: 100%;
-    height: 80%;
+    height: 60%;
     border-radius: 16px;
     border: 1px solid #d3d3d3;
 }
+
+
+/* 스위트 모먼트 이미지 */
 .container-menu > .content > .inner > .item-wrapper > .item > .waffle {
     background: url('/src//asset/img/menu-waffle-2.jpg') no-repeat center 65%/cover;
 }
+.container-menu > .content > .inner > .item-wrapper > .item > .churros {
+    background: url('/src//asset/img/menu-churros.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .financier {
+    background: url('/src//asset/img/menu-financier.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .madeleine {
+    background: url('/src//asset/img/menu-madeleine.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .chocochip-cookie {
+    background: url('/src//asset/img/menu-chocochip-cookie.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .tiramisu {
+    background: url('/src//asset/img/menu-tiramisu.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .snack-bag {
+    background: url('/src//asset/img/menu-snack-bag.jpg') no-repeat center/cover;
+}
+/* 스위트 모먼트 이미지 */
+
+
 .container-menu > .content > .inner > .item-wrapper > .item > .fruit {
     background: url('/src//asset/img/menu-fruit.jpg') no-repeat center 90%/cover;
 }
@@ -169,16 +193,28 @@
 .container-menu > .content > .inner > .item-wrapper > .item > .sandwich {
     background: url('/src//asset/img/menu-sandwich.jpg') no-repeat center/cover;
 }
-.container-menu > .content > .inner > .item-wrapper > .item > .tiramisu {
-    background: url('/src//asset/img/menu-tiramisu.jpg') no-repeat center/cover;
-}
-.container-menu > .content > .inner > .item-wrapper > .item > .description > .name {
-    font-family: 'Pretendard-B';
+.container-menu > .content > .inner > .item-wrapper > .item > .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 22px;
-    padding: 14px 0px 6px 0px;
+    padding: 10px;
 }
-.container-menu > .content > .inner > .item-wrapper > .item > .description > .price {
-    font-size: 18px;
+.container-menu > .content > .inner > .item-wrapper > .item > .top > .name,
+.container-menu > .content > .inner > .item-wrapper > .item > .top > .price {
+    font-family: 'Pretendard-B';
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .bottom {
+    text-align: left;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .bottom > .description {
+    line-height: 22px;
+    border-top: 1px solid #d3d3d3;
+    padding: 10px;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .bottom > .description > .option {
+    color: #e74354;
+    font-family: 'Pretendard-B';
 }
 
 @media screen and (max-width: 850px) {
@@ -188,7 +224,12 @@
     }
 }
 @media screen and (max-width: 768px) {
-
+    .container-menu > .content > .inner > .item-wrapper > .item {
+        height: 400px;
+    }
+    .container-menu > .content > .inner > .item-wrapper > .item > .top {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 540px) {
     .container-menu > .content > .inner > .menu > .title > span {
@@ -210,6 +251,7 @@
     .container-menu > .content > .inner > .menu > .description > .highlight {
         font-size: 18px;
         padding-bottom: 8px;
+        line-height: 24px;
     }
     .container-menu > .content > .title > p:nth-child(1) {
         font-size: 28px;
@@ -217,5 +259,14 @@
     .container-menu > .content > .title > p:nth-child(2) {
         font-size: 18px;
         padding-top: 4px;
+    }
+    .container-menu > .content > .inner > .menu > .coffee-line-up > div > div {
+        width: calc((100% - 30px)/2);
+    }
+
+
+    .container-menu > .content > .inner > .item-wrapper > .item {
+        width: 100%;
+        height: 350px;
     }
 }
