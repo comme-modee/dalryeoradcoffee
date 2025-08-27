@@ -63,16 +63,84 @@
     font-size: 20px;
     padding-bottom: 30px;
 }
-.container-menu > .content > .inner > img {
+.container-menu > .content > .inner {
     width: 100%;
     max-width: 800px;
+    margin: 0 auto;
 }
-.container-menu > .content > .inner > .title {
-    font-family: 'Pretendard-SB';
-    font-size: 40px;
-    padding: 30px 0px;
+.container-menu > .content > .inner > .menu {
+    background-color: #fff6f6;
 }
-.container-menu > .content > .inner > .item-wrapper {
+.container-menu > .content > .inner > .menu-primium {
+    background-color: #f5fcfc;
+}
+.container-menu > .content > .inner > .menu-signature {
+    background-color: #f8f4fa;
+}
+.container-menu > .content > .inner > .menu > .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #d82234;
+    border-top: 1px solid #d82234;
+    border-bottom: 1px solid #d82234;
+    background-color: #ffe4e4;
+}
+.container-menu > .content > .inner > .menu-primium > .title {
+    color: #04739f;
+    background-color: #e2f3f2;
+    border-top: 1px solid #04739f;
+    border-bottom: 1px solid #04739f;
+}
+.container-menu > .content > .inner > .menu-signature > .title {
+    color: #621095;
+    background-color: #ebdef3;
+    border-top: 1px solid #621095;
+    border-bottom: 1px solid #621095;
+}
+.container-menu > .content > .inner > .menu > .title > span {
+    font-family: 'Pretendard-B';
+    font-size: 24px;
+}
+.container-menu > .content > .inner > .menu > .description {
+    line-height: 1.6rem;
+    padding: 24px;
+    border-bottom: 1px solid #d82234;
+}
+.container-menu > .content > .inner > .menu-primium > .description {
+    border-bottom: 1px solid #04739f;
+}
+.container-menu > .content > .inner > .menu-signature > .description {
+    border-bottom: 1px solid #621095;
+}
+.container-menu > .content > .inner > .menu > .description > .highlight {
+    font-size: 20px;
+    font-family: 'Pretendard-B';
+}
+.container-menu > .content > .inner > .menu > .coffee-line-up {
+    text-align: left;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+.container-menu > .content > .inner > .menu > .coffee-line-up > div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container-menu > .content > .inner > .menu > .coffee-line-up .title {
+    font-size: 20px;
+    font-family: 'Pretendard-B';
+    padding-bottom: 6px;
+}
+.container-menu > .content > .inner > .menu > .coffee-line-up li {
+    line-height: 22px;
+}
+
+
+
+.container-menu > .content > .inner > .menu > .item-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -113,40 +181,41 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
-    .container-menu > .intro {
-        padding: 20px 0px;
-    }
-    .container-menu > .intro > .text > p:nth-child(1) {
-        font-size: 32px;
-    }
-    .container-menu > .intro > .text > p:nth-child(2) {
-        font-size: 20px;
-    }
-    .container-menu > .content {
-        padding: 30px 10px;
-    }
-    .container-menu > .content > .inner > .item-wrapper > .item {
-        height: 380px;
-    }
-    .container-menu > .content > .inner > .item-wrapper > .item > .img {
-        height: 76%;
+@media screen and (max-width: 850px) {
+    .container-menu > .menu-bar > ul {
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 }
+@media screen and (max-width: 768px) {
+
+}
 @media screen and (max-width: 540px) {
-    .container-menu {
-        padding: 60px 0px 0px 0px;
+    .container-menu > .content > .inner > .menu > .title > span {
+        font-size: 20px;
     }
-    .container-menu > .intro {
-        padding: 0px;
+    .container-menu > .content > .inner > .menu > .description {
+        font-size: 14px;
+        line-height: 20px;
     }
-    .container-menu > .content {
-        padding: 20px 10px;
+    .container-menu > .content > .inner > .menu > .description br {
+        display: none;
     }
-    .container-menu > .content > .inner > .title {
-        font-size: 26px;
+    .container-menu > .content > .inner > .menu > .coffee-line-up .title {
+        font-size: 18px;
     }
-    .container-menu > .content > .inner > .item-wrapper > .item {
-        width: 100%;
+    .container-menu > .content > .inner > .menu > .coffee-line-up li {
+        font-size: 14px;
+    }
+    .container-menu > .content > .inner > .menu > .description > .highlight {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    .container-menu > .content > .title > p:nth-child(1) {
+        font-size: 28px;
+    }
+    .container-menu > .content > .title > p:nth-child(2) {
+        font-size: 18px;
+        padding-top: 4px;
     }
 }

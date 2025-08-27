@@ -34,7 +34,7 @@ const Service = () => {
                     <div className='img-container'>
                         <div className='img'><span>배우 김선호 서포트</span></div>
                         <div className='img'><span>배우 전여빈 서포트</span></div>
-                        <div className='img'><span>배우 김선호 서포트</span></div>
+                        <div className='img'><span>배우 안효섭 서포트</span></div>
                     </div>
                 </div>
                 <div className='item item-3'>
