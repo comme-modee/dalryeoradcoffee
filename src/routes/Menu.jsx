@@ -445,18 +445,6 @@ const Menu = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='item'>
-                                <div className='img snack-bag'></div>
-                                <div className='top'>
-                                    <div className='name'>달려라 간식백</div>
-                                    <div className='price'>5,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        인기 과자와 간식들을 골라 담은 간식꾸러미! 다양한 간식을 한번에 즐길 수 있는 알찬 구성. 단체선물로도 인기만점인 핫 아이템
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </React.Fragment>
                 :
