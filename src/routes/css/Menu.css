@@ -75,40 +75,43 @@
     margin: 0 auto;
 }
 .container-menu > .content > .inner > .menu {
-    background-color: #fff6f6;
+    border-radius: 20px;
+}
+.container-menu > .content > .inner > .menu-basic {
+    background-color: #fff3f3;
 }
 .container-menu > .content > .inner > .menu-primium {
-    background-color: #f5fcfc;
+    background-color: #f2fcfb;
 }
 .container-menu > .content > .inner > .menu-signature {
-    background-color: #f8f4fa;
+    background-color: #f5eff9;
 }
 .container-menu > .content > .inner > .menu > .title {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px;
     color: #d82234;
-    border-top: 1px solid #d82234;
-    border-bottom: 1px solid #d82234;
+    border: 1px solid #d82234;
+    border-radius: 20px;
     background-color: #ffe4e4;
 }
 .container-menu > .content > .inner > .menu-primium > .title {
     color: #04739f;
     background-color: #e2f3f2;
-    border-top: 1px solid #04739f;
-    border-bottom: 1px solid #04739f;
+    border: 1px solid #04739f;
 }
 .container-menu > .content > .inner > .menu-signature > .title {
     color: #621095;
     background-color: #ebdef3;
-    border-top: 1px solid #621095;
-    border-bottom: 1px solid #621095;
+    border: 1px solid #621095;
 }
 .container-menu > .content > .inner > .menu > .title > span {
     font-family: 'Pretendard-B';
     font-size: 24px;
 }
 .container-menu > .content > .inner > .menu > .description {
+    margin: 0 auto;
+    width: 90%;
     line-height: 1.6rem;
     padding: 24px;
     border-bottom: 1px solid #d82234;
