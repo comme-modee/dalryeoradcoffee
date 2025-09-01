@@ -13,19 +13,6 @@ const Service = () => {
                 </div>
                 <div className='item item-1'>
                     <div className='title'>
-                        기업 이벤트
-                    </div>
-                    <div className='sub-title'>
-                        그랜드 오픈 기념 행사 / 워크샵 / 세미나
-                    </div>
-                    <div className='img-container'>
-                        <div className='img'><span>서울시 십대여성 진로체험축제</span></div>
-                        <div className='img'><span>취업지원 홍보 행사</span></div>
-                        <div className='img'><span>교원 연수 응원 행사</span></div>
-                    </div>
-                </div>
-                <div className='item item-2'>
-                    <div className='title'>
                         연예인 서포트
                     </div>
                     <div className='sub-title'>
@@ -35,6 +22,19 @@ const Service = () => {
                         <div className='img'><span>배우 김선호 서포트</span></div>
                         <div className='img'><span>배우 전여빈 서포트</span></div>
                         <div className='img'><span>배우 안효섭 서포트</span></div>
+                    </div>
+                </div>
+                <div className='item item-2'>
+                    <div className='title'>
+                        기업 이벤트
+                    </div>
+                    <div className='sub-title'>
+                        그랜드 오픈 기념 행사 / 워크샵 / 세미나
+                    </div>
+                    <div className='img-container'>
+                        <div className='img'><span>서울시 십대여성 진로체험축제</span></div>
+                        <div className='img'><span>취업지원 홍보 행사</span></div>
+                        <div className='img'><span>교원 연수 응원 행사</span></div>
                     </div>
                 </div>
                 <div className='item item-3'>

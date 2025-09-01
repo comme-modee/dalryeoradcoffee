@@ -61,12 +61,12 @@
     height: 100%;
     border-radius: 10px;
 }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-5.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-2.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-13.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-14.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-13.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
+.container-service > .content > .item-2 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-5.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-12.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-9.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-8.jpg') center center/cover; }
