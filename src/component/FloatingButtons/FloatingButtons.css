@@ -33,7 +33,7 @@
     overflow: hidden;
     color: #ffffff;
 }
-.floating-btn-wrapper > .btn:nth-child(3) {
+.floating-btn-wrapper > .scrollToTopBtn {
     background-color: #9979e9;
 }
 .floating-btn-wrapper > .btn > img {

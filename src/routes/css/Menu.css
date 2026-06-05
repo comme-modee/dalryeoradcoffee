@@ -89,6 +89,7 @@
 .container-menu > .content > .inner > .menu > .title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     color: #d82234;
     border: 1px solid #d82234;
@@ -105,9 +106,15 @@
     background-color: #ebdef3;
     border: 1px solid #621095;
 }
-.container-menu > .content > .inner > .menu > .title > span {
+.container-menu > .content > .inner > .menu > .title > div {
     font-family: 'Pretendard-B';
     font-size: 24px;
+}
+.container-menu > .content > .inner > .menu > .title > .price-wrapper {
+    text-align: right;
+}
+.container-menu > .content > .inner > .menu > .title > .price-wrapper .tag {
+    font-size: 18px;
 }
 .container-menu > .content > .inner > .menu > .description {
     margin: 0 auto;
@@ -341,9 +348,6 @@
     }
 }
 @media screen and (max-width: 540px) {
-    .container-menu > .content > .inner > .menu > .title > span {
-        font-size: 20px;
-    }
     .container-menu > .content > .inner > .menu > .description {
         font-size: 14px;
         line-height: 20px;
@@ -380,5 +384,12 @@
     }
     .container-menu > .content > .inner > .item-wrapper > .item > .img {
         height: 65%;
+    }
+
+    .container-menu > .content > .inner > .menu > .title > div {
+        font-size: 18px;
+    }
+    .container-menu > .content > .inner > .menu > .title > .price-wrapper .tag {
+        font-size: 16px;
     }
 }

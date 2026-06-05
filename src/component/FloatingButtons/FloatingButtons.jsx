@@ -2,6 +2,7 @@ import React from 'react'
 import './FloatingButtons.css'
 import kakao from '../../asset/img/kakao.png'
 import instagram from '../../asset/img/instagram.png'
+import naverBlog from '../../asset/img/blog.png'
 import { IoIosArrowUp } from 'react-icons/io'
 
 const FloatingButtons = () => {
@@ -26,7 +27,15 @@ const FloatingButtons = () => {
         >
             <img src={instagram} alt='인스타그램버튼' />
         </a>
-        <div className='btn' onClick={scrollToTop}>
+        <a
+            href='https://blog.naver.com/breathingcoffeebar/224099410992'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='btn'
+        >
+            <img src={naverBlog} alt='네이버블로그버튼' />
+        </a>
+        <div className='btn scrollToTopBtn' onClick={scrollToTop}>
             <IoIosArrowUp size={20} color="#ffffff" />
             <p>TOP</p>
         </div>

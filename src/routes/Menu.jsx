@@ -49,8 +49,11 @@ const Menu = () => {
                     <React.Fragment>
                         <div className='menu menu-basic'>
                             <p className='title'>
-                                <span>[BASIC] 베이직</span>
-                                <span>3,500원</span>
+                                <div>[BASIC] 베이직</div>
+                                <div className='price-wrapper'>
+                                    <div><span className='tag'>기본(14oz)</span> <span className='op-price'>3,500원</span></div>
+                                    <div><span className='tag'>사이즈업(16oz)</span> <span className='op-price'>4,500원</span></div>
+                                </div>
                             </p>
                             <p className='description'>
                                 <div className='highlight'>
@@ -72,6 +75,7 @@ const Menu = () => {
                                             <li>카라멜아메리카노</li>
                                             <li>헤이즐넛아메리카노</li>
                                             <li>카페라테</li>
+                                            <li>카푸치노</li>
                                             <li>카페모카</li>
                                             <li>바닐라라테</li>
                                             <li>카라멜라테</li>
@@ -81,7 +85,6 @@ const Menu = () => {
                                     <div>
                                         <div className='title'>NON-COFFEE</div>
                                         <ul className='menu'>
-                                            <li>핫초코</li>
                                             <li>초코라테</li>
                                             <li>스팀우유</li>
                                         </ul>
@@ -92,6 +95,8 @@ const Menu = () => {
                                             <li>복숭아아이스티</li>
                                             <li>캐모마일</li>
                                             <li>페퍼민트</li>
+                                            <li>레몬스카이</li>
+                                            <li>윈터드림</li>
                                             <li>유자차</li>
                                             <li>그린티</li>
                                             <li>레몬티</li>
@@ -109,7 +114,7 @@ const Menu = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='menu menu-primium'>
+                        {/* <div className='menu menu-primium'>
                             <p className='title'>
                                 <span>[PRIMIUM] 프리미엄</span>
                                 <span>4,000원</span>
@@ -186,11 +191,14 @@ const Menu = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className='menu menu-signature'>
                             <p className='title'>
-                                <span>[SIGNATURE] 시그니처</span>
-                                <span>4,500원</span>
+                                <div>[SIGNATURE] 시그니처</div>
+                                <div className='price-wrapper'>
+                                    <div><span className='tag'>기본(14oz)</span> <span className='op-price'>4,500원</span></div>
+                                    <div><span className='tag'>사이즈업(16oz)</span> <span className='op-price'>5,000원</span></div>
+                                </div>
                             </p>
                             <p className='description'>
                                 <div className='highlight'>
@@ -212,6 +220,7 @@ const Menu = () => {
                                             <li>카라멜아메리카노</li>
                                             <li>헤이즐넛아메리카노</li>
                                             <li>카페라테</li>
+                                            <li>카푸치노</li>
                                             <li>카페모카</li>
                                             <li>바닐라라테</li>
                                             <li>카라멜라테</li>
@@ -221,8 +230,6 @@ const Menu = () => {
                                             <li>토피넛카페라테</li>
                                             <li>아샷추</li>
                                             <li>디카페인 아메리카노</li>
-                                            <li>꿀메리카노</li>
-                                            <li>꿀라테</li>
                                         </ul>
                                     </div>
                                     <div>
@@ -254,10 +261,8 @@ const Menu = () => {
                                             <li>매실차</li>
                                             <li>오미자차</li>
                                             <li>대추차</li>
-                                            <li>율무차</li>
                                             <li>레몬스카이</li>
                                             <li>윈터드림</li>
-                                            <li>천마차</li>
                                             <li>생강차</li>
                                         </ul>
                                     </div>
@@ -305,7 +310,7 @@ const Menu = () => {
                                 <div className='img burger'></div>
                                 <div className='top'>
                                     <div className='name'>달버거</div>
-                                    <div className='price'>7,000원</div>
+                                    <div className='price'>8,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -314,22 +319,10 @@ const Menu = () => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='img hotdog'></div>
-                                <div className='top'>
-                                    <div className='name'>달도그</div>
-                                    <div className='price'>6,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        현장의 바쁜 순간에도 손에 쥐고 한입 쏙! 육즙 팡팡 탱글 소세지에 눈이 확 떠지는 맛. 뉴욕 스타일 핫도그
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
                                 <div className='img sandwich'></div>
                                 <div className='top'>
                                     <div className='name'>달드위치</div>
-                                    <div className='price'>7,000원</div>
+                                    <div className='price'>8,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -338,22 +331,10 @@ const Menu = () => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='img cobb-salad'></div>
-                                <div className='top'>
-                                    <div className='name'>콥샐러드</div>
-                                    <div className='price'>6,500원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        신선한 샐러드와 병아리콩, 계란, 아몬드 등 탄단지 밸런스 완벽한 현대인 맞춤 건강식!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
                                 <div className='img fruit'></div>
                                 <div className='top'>
                                     <div className='name'>컵과일</div>
-                                    <div className='price'>5,000원</div>
+                                    <div className='price'>6,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -401,47 +382,11 @@ const Menu = () => {
                                 <div className='img financier'></div>
                                 <div className='top'>
                                     <div className='name'>휘낭시에</div>
-                                    <div className='price'>3,000원</div>
+                                    <div className='price'>3,500원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
                                         헤이즐넛 버터의 고소한 풍미가 입 안에 가득! 커피와 찰떡궁합인 쫀득바삭촉촉 베이커리
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img madeleine'></div>
-                                <div className='top'>
-                                    <div className='name'>마들렌</div>
-                                    <div className='price'>3,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        촉촉하고 부드러운 식감에 고소한 버터향까지! 먹자마자 행복해지는 프랑스 대표 구움과자
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img chocochip-cookie'></div>
-                                <div className='top'>
-                                    <div className='name'>초코칩쿠키</div>
-                                    <div className='price'>2,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        바삭한 쿠키 속에 달콤한 초코칩이 가득! 촬영장 당충전은 초코칩쿠키에게 맡겨라!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img tiramisu'></div>
-                                <div className='top'>
-                                    <div className='name'>티라미수</div>
-                                    <div className='price'>6,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        부드럽고 달콤한 마스카포네 치즈와 달려라커피의 향긋하고 진한 에스프레소, 쌉싸래한 코코아가루가 더해진 이탈리아 디저트
                                     </div>
                                 </div>
                             </div>
@@ -535,7 +480,7 @@ const Menu = () => {
                                 <div className='img taiyaki'></div>
                                 <div className='top'>
                                     <div className='name'>도미빵</div>
-                                    <div className='price'>2개 4,000원</div>
+                                    <div className='price'>2개 5,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -543,21 +488,6 @@ const Menu = () => {
                                             종류: 팥, 슈크림
                                         </div>
                                         겨울 간식 하면 빠질 수 없는 것! 바로 도미빵!! 얇고 바삭한 반죽에 팥과 슈크림이 가득가득
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img vin-chaud'></div>
-                                <div className='top'>
-                                    <div className='name'>뱅쇼</div>
-                                    <div className='price'>6,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        <div className='option'>
-                                            무알콜 가능
-                                        </div>
-                                        사과, 오렌지, 자몽 등 달콤한 과일과 포도주, 계피 등 향신재료를 넣고 뜨끈하게 끓여 한 잔 마시면 온 몸이 따뜻해지는 음료
                                     </div>
                                 </div>
                             </div>
@@ -611,54 +541,6 @@ const Menu = () => {
                                 <div className='bottom'>
                                     <div className='description'>
                                         구수한 엿기름 향과 달콤함이 어우러진 해외팬들의 사랑 듬뿍 받는 한국의 전통음료
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img corn-dog'></div>
-                                <div className='top'>
-                                    <div className='name'>옛날핫도그</div>
-                                    <div className='price'>3,500원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        달달한 설탕에 케찹과 머스타드 소스 조합! 한번씩 꼭 생각나는 추억의 옛날 핫도그
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img potato-corn-dog'></div>
-                                <div className='top'>
-                                    <div className='name'>감자핫도그</div>
-                                    <div className='price'>4,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        감자튀김과 핫도그의 만남?! 바삭한 감자가 잔뜩 붙은 고소하고 쫀득한 핫도그
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img cheese-corn-dog'></div>
-                                <div className='top'>
-                                    <div className='name'>치즈핫도그</div>
-                                    <div className='price'>4,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        고소한 모짜렐라 치즈가 쭈욱 늘어나는 치즈 러버들의 영원한 사랑, 치즈핫도그!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img grilled-sausage'></div>
-                                <div className='top'>
-                                    <div className='name'>그릴소세지</div>
-                                    <div className='price'>4,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        탱글한 식감과 육즙이 터지는 맛, 은은한 불향이 입안을 감싸는 프리미엄 소시지
                                     </div>
                                 </div>
                             </div>
