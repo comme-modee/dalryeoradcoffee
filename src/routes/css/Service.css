@@ -61,18 +61,27 @@
     height: 100%;
     border-radius: 10px;
 }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-14.jpg') center center/cover; }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
-.container-service > .content > .item-1 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-13.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
-.container-service > .content > .item-2 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-5.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-1 > .img:nth-child(1) { background: url('/src/asset/img/service-18.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-1 > .img:nth-child(2) { background: url('/src/asset/img/service-19.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-1 > .img:nth-child(3) { background: url('/src/asset/img/service-20.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-2 > .img:nth-child(1) { background: url('/src/asset/img/service-14.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-2 > .img:nth-child(2) { background: url('/src/asset/img/service-3.jpg') center center/cover; }
+.container-service > .content > .item-1 > .img-container-2 > .img:nth-child(3) { background: url('/src/asset/img/service-13.jpg') center center/cover; }
+.container-service > .content > .item-wedding > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-21.jpg') center center/cover; }
+.container-service > .content > .item-wedding > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-22.jpg') center center/cover; }
+.container-service > .content > .item-wedding > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-23.jpg') center center/cover; }
+.container-service > .content > .item-business > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-24.jpg') center center/cover; }
+.container-service > .content > .item-business > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-7.jpg') center center/cover; }
+.container-service > .content > .item-business > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-6.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-12.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-9.jpg') center center/cover; }
 .container-service > .content > .item-3 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-8.jpg') center center/cover; }
 .container-service > .content > .item-4 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-10.jpg') center center/cover; }
 .container-service > .content > .item-4 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-11.jpg') center center/cover; }
 .container-service > .content > .item-4 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-1.jpg') center center/cover; }
+.container-service > .content > .item-5 > .img-container > .img:nth-child(1) { background: url('/src/asset/img/service-15.jpg') center center/cover; }
+.container-service > .content > .item-5 > .img-container > .img:nth-child(2) { background: url('/src/asset/img/service-16.jpg') center center/cover; }
+.container-service > .content > .item-5 > .img-container > .img:nth-child(3) { background: url('/src/asset/img/service-17.jpg') center center/cover; }
 
 .container-service > .content > .item > .img-container > .img > span {
     position: absolute;

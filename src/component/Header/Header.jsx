@@ -20,7 +20,7 @@ const Header = () => {
                         <Link to='/menu'>메뉴 소개</Link>
                     </div>
                 </div> */}
-                <div className='menu-item'>
+                {/* <div className='menu-item'>
                     <Link to='/about' className='dropdown-trigger'>회사소개</Link>
                 </div>
                 <div className='menu-item'>
@@ -31,19 +31,19 @@ const Header = () => {
                 </div>
                 <div className='menu-item'>
                     <Link to='/revillage' className='dropdown-trigger'>Re:마을공작소</Link>
-                </div>
+                </div> */}
                 <div className='menu-item'>
                     <Link to='/service' className='dropdown-trigger'>서비스소개</Link>
                 </div>
                 <div className='menu-item'>
-                    <Link to='/menu' className='dropdown-trigger'>메뉴소개</Link>
+                    <Link to='/menu' className='dropdown-trigger'>메뉴안내</Link>
                 </div>
-                <div className='menu-item'>
+                {/* <div className='menu-item'>
                     <Link to='/momostable' className='dropdown-trigger'>모모스테이블</Link>
                 </div>
                 <div className='menu-item'>
                     <Link to='roza119' className='dropdown-trigger'>로자119</Link>
-                </div>
+                </div> */}
             </div>
             <div className='mobile'>
                 <HamburgerMenu />

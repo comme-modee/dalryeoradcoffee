@@ -306,7 +306,7 @@ const Menu = () => {
                 selectedMenu === 'Comfort Moment' ?
                     <React.Fragment>
                         <div className='item-wrapper'>
-                            <div className='item'>
+                            {/* <div className='item'>
                                 <div className='img burger'></div>
                                 <div className='top'>
                                     <div className='name'>달버거</div>
@@ -317,12 +317,12 @@ const Menu = () => {
                                         두툼한 불고기 패티와 특제 소스로 한입 베어물면 스태프들의 속이 든든해지는 촬영장의 에너지 충전 버거
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className='item'>
                                 <div className='img sandwich'></div>
                                 <div className='top'>
-                                    <div className='name'>달드위치</div>
-                                    <div className='price'>8,000원</div>
+                                    <div className='name'>잠봉뵈르 샌드위치</div>
+                                    <div className='price'>13,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -352,7 +352,7 @@ const Menu = () => {
                                 <div className='img waffle'></div>
                                 <div className='top'>
                                     <div className='name'>리에주와플</div>
-                                    <div className='price'>3,500원</div>
+                                    <div className='price'>4,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -379,6 +379,18 @@ const Menu = () => {
                                 </div>
                             </div>
                             <div className='item'>
+                                <div className='img '></div>
+                                <div className='top'>
+                                    <div className='name'>쿠키백</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        여러 가지 쿠키를 한 봉지에 담아 골라먹는 재미가 있는 쿠키백
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
                                 <div className='img financier'></div>
                                 <div className='top'>
                                     <div className='name'>휘낭시에</div>
@@ -400,8 +412,8 @@ const Menu = () => {
                             <div className='item'>
                                 <div className='img bingsu'></div>
                                 <div className='top'>
-                                    <div className='name'>달빙수</div>
-                                    <div className='price'>5,000원</div>
+                                    <div className='name'>팥빙수</div>
+                                    <div className='price'>7,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -413,7 +425,7 @@ const Menu = () => {
                                 <div className='img mango-bingsu'></div>
                                 <div className='top'>
                                     <div className='name'>망고빙수</div>
-                                    <div className='price'>5,000원</div>
+                                    <div className='price'>7,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -421,7 +433,7 @@ const Menu = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='item'>
+                            {/* <div className='item'>
                                 <div className='img strawberry-bingsu'></div>
                                 <div className='top'>
                                     <div className='name'>딸기빙수</div>
@@ -432,8 +444,8 @@ const Menu = () => {
                                         새콤달콤 딸기 과육이 가득 씹혀 상큼한 빙수. 달콤한 쿠앤크와 바삭한 건조딸기까지 더해져 식감과 맛, 두 마리 토끼를 다 잡았다!
                                     </div>
                                 </div>
-                            </div>
-                            <div className='item'>
+                            </div> */}
+                            {/* <div className='item'>
                                 <div className='img watermelon-juice'></div>
                                 <div className='top'>
                                     <div className='name'>수박주스</div>
@@ -444,7 +456,7 @@ const Menu = () => {
                                         수박이 통째로 들어간 생과일 주스. 시럽을 넣지 않고 100% 수박으로만 갈아낸 머리가 띵해지도록 시원한 여름 대표 음료
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className='label label-winter'>겨울 시즌 메뉴</div>
@@ -468,7 +480,7 @@ const Menu = () => {
                                 <div className='img fishcake'></div>
                                 <div className='top'>
                                     <div className='name'>꼬치어묵</div>
-                                    <div className='price'>2개 3,000원</div>
+                                    <div className='price'>3개 5,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -479,7 +491,7 @@ const Menu = () => {
                             <div className='item'>
                                 <div className='img taiyaki'></div>
                                 <div className='top'>
-                                    <div className='name'>도미빵</div>
+                                    <div className='name'>붕어빵</div>
                                     <div className='price'>2개 5,000원</div>
                                 </div>
                                 <div className='bottom'>
@@ -500,7 +512,7 @@ const Menu = () => {
                                 <div className='img tteokkochi'></div>
                                 <div className='top'>
                                     <div className='name'>떡꼬치</div>
-                                    <div className='price'>3,000원</div>
+                                    <div className='price'>4,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -524,7 +536,7 @@ const Menu = () => {
                                 <div className='img chicken-skewers'></div>
                                 <div className='top'>
                                     <div className='name'>닭꼬치</div>
-                                    <div className='price'>5,000원</div>
+                                    <div className='price'>6,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -552,7 +564,7 @@ const Menu = () => {
                                 <div className='img tteokbokki'></div>
                                 <div className='top'>
                                     <div className='name'>떡볶이</div>
-                                    <div className='price'>5,000원</div>
+                                    <div className='price'>6,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -564,7 +576,7 @@ const Menu = () => {
                                 <div className='img fishcake'></div>
                                 <div className='top'>
                                     <div className='name'>꼬치어묵</div>
-                                    <div className='price'>2개 3,000원</div>
+                                    <div className='price'>3개 5,000원</div>
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
@@ -586,7 +598,7 @@ const Menu = () => {
                             </div>
                         </div>
 
-                        <div className='label label-korean-street-food'>분식 세트 메뉴</div>
+                        {/* <div className='label label-korean-street-food'>분식 세트 메뉴</div>
                         <div className='item-wrapper'>
                             <div className='item'>
                                 <div className='img set1'></div>
@@ -609,7 +621,7 @@ const Menu = () => {
                                     <div className='price'>12,000원</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </React.Fragment>}
             </div>
         </div>
