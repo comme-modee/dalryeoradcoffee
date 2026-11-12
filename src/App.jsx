@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import './App.css';
 import './asset/font/Font.css';
-// import Main from './routes/Main';
+import Main from './routes/Main';
 // import Momo from './routes/Momo';
 // import Roza from './routes/Roza';
 // import Breath from './routes/Breath';
@@ -29,7 +29,7 @@ function App() {
       <FloatingButtons/>
       <Header/>
       <Routes>
-        {/* <Route path="/" element={<Main />} /> */}
+        <Route path="/" element={<Main />} />
         {/* <Route path="/about" element={<About />} /> */}
         {/* <Route path="/ceo" element={<Ceo />} /> */}
         {/* <Route path="/business" element={<Business />} /> */}
