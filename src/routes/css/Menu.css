@@ -12,7 +12,7 @@
     background: url('/src/asset/img/menu-caffeine.jpg') no-repeat center/cover;
 }
 .container-menu > .intro-img-comfort {
-    background: url('/src/asset/img/menu-comfort.jpg') no-repeat center/cover;
+    background: url('/src/asset/img/menu-Jambon-Beurre.png') no-repeat center/cover;
 }
 .container-menu > .intro-img-sweet {
     background: url('/src/asset/img/menu-sweet.jpg') no-repeat center 30%/cover;
@@ -222,6 +222,9 @@
 }
 .container-menu > .content > .inner > .item-wrapper > .item > .financier {
     background: url('/src//asset/img/menu-financier.jpg') no-repeat center/cover;
+}
+.container-menu > .content > .inner > .item-wrapper > .item > .cookie-bag {
+    background: url('/src//asset/img/menu-cookie-bag.jpg') no-repeat center/cover;
 }
 .container-menu > .content > .inner > .item-wrapper > .item > .madeleine {
     background: url('/src//asset/img/menu-madeleine.jpg') no-repeat center/cover;

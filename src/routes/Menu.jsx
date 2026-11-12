@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './css/Common.css'
 import './css/Menu.css'
 
 const Menu = () => {
-  const [selectedMenu, setSelectedMenu] = useState('Caffeine Moment');
+//   const [selectedMenu, setSelectedMenu] = useState('Caffeine Moment');
 
-  const menuContents = {
-    'Caffeine Moment': '하루를 여는 깊고 진한 커피의 시간',
-    'Comfort Moment': '속을 채우고 마음을 쉬게 하는 한 끼 디저트',
-    'Sweet Moment': '팬심이 녹아든 달콤한 순간',
-    'Seasonal Moment': '계절과 감각이 머무는 찰나의 여운',
-    'Hot Moment': '뜨끈한 위로 한 그릇의 정',
-  };
+//   const menuContents = {
+//     'Caffeine Moment': '하루를 여는 깊고 진한 커피의 시간',
+//     'Comfort Moment': '속을 채우고 마음을 쉬게 하는 한 끼 디저트',
+//     'Sweet Moment': '팬심이 녹아든 달콤한 순간',
+//     'Seasonal Moment': '계절과 감각이 머무는 찰나의 여운',
+//     'Hot Moment': '뜨끈한 위로 한 그릇의 정',
+//   };
 
-  const handleMenuClick = (menu) => {
-    setSelectedMenu(menu);
-  };
+//   const handleMenuClick = (menu) => {
+//     setSelectedMenu(menu);
+//   };
 
   return (
     <div className='container container-menu'>
-        <div className={
+        {/* <div className={
             `intro-img 
             ${selectedMenu === 'Caffeine Moment' ? 'intro-img-caffeine' :
               selectedMenu === 'Comfort Moment' ? 'intro-img-comfort' :
@@ -38,15 +38,16 @@ const Menu = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div className='content'>
             <div className='title'>
-                <p>{selectedMenu}</p>
-                <p>{menuContents[selectedMenu]}</p>
+                {/* <p>{selectedMenu}</p>
+                <p>{menuContents[selectedMenu]}</p> */}
             </div>
             <div className='inner'>
-                {selectedMenu === 'Caffeine Moment' ? 
+                {/* {selectedMenu === 'Caffeine Moment' ?  */}
                     <React.Fragment>
+                        <div className='label label-korean-street-food'>커피 및 음료 메뉴</div>
                         <div className='menu menu-basic'>
                             <p className='title'>
                                 <div>[BASIC] 베이직</div>
@@ -302,9 +303,10 @@ const Menu = () => {
                         </div>
                     
                     </React.Fragment>
-                :
-                selectedMenu === 'Comfort Moment' ?
+                {/* :
+                selectedMenu === 'Comfort Moment' ? */}
                     <React.Fragment>
+                        <div className='label label-korean-street-food'>간식류</div>
                         <div className='item-wrapper'>
                             {/* <div className='item'>
                                 <div className='img burger'></div>
@@ -344,8 +346,8 @@ const Menu = () => {
                             </div>
                         </div>
                     </React.Fragment>
-                :
-                selectedMenu === 'Sweet Moment' ?
+                {/* :
+                selectedMenu === 'Sweet Moment' ? */}
                     <React.Fragment>
                         <div className='item-wrapper'>
                             <div className='item'>
@@ -379,7 +381,7 @@ const Menu = () => {
                                 </div>
                             </div>
                             <div className='item'>
-                                <div className='img '></div>
+                                <div className='img cookie-bag'></div>
                                 <div className='top'>
                                     <div className='name'>쿠키백</div>
                                     <div className='price'>6,000원</div>
@@ -404,10 +406,98 @@ const Menu = () => {
                             </div>
                         </div>
                     </React.Fragment>
-                :
-                selectedMenu === 'Seasonal Moment' ?
+
                     <React.Fragment>
-                        <div className='label label-summer'>여름 시즌 메뉴</div>
+                        <div className='item-wrapper'>
+                            <div className='item'>
+                                <div className='img tteokkochi'></div>
+                                <div className='top'>
+                                    <div className='name'>떡꼬치</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        매콤달콤한 양념이 쫄깃한 떡에 스며들어 중독성 있는 추억의 길거리 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sotteok-sotteok'></div>
+                                <div className='top'>
+                                    <div className='name'>소떡소떡</div>
+                                    <div className='price'>4,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        뽀드득뽀드득 통통소세지와 쫜득쫜득한 쌀떡에 매콤달콤 소스가 만나 언제 먹어도 맛있는 마성의 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img chicken-skewers'></div>
+                                <div className='top'>
+                                    <div className='name'>닭꼬치</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        불향 가득, 달콤 짭짤 소스가 배인 촉촉한 닭고기 꼬치
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img tteokbokki'></div>
+                                <div className='top'>
+                                    <div className='name'>떡볶이</div>
+                                    <div className='price'>6,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        쫄깃한 떡에 매콤달콤 양념이 진하게 배어 한입마다 중독되는 국민 간식
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img fishcake'></div>
+                                <div className='top'>
+                                    <div className='name'>꼬치어묵</div>
+                                    <div className='price'>3개 5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        어묵 함량 높은 고급 어묵과 직접 채수를 우려내 만든 수제 어묵국물로 겨울철 촬영장의 인기 메뉴!
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sundae'></div>
+                                <div className='top'>
+                                    <div className='name'>순대</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        김이 모락모락, 고소하고 부드러운 속재료와 쫄깃한 피가 어우러진 대표 분식 메뉴
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                <div className='img sikhye'></div>
+                                <div className='top'>
+                                    <div className='name'>식혜</div>
+                                    <div className='price'>5,000원</div>
+                                </div>
+                                <div className='bottom'>
+                                    <div className='description'>
+                                        구수한 엿기름 향과 달콤함이 어우러진 해외팬들의 사랑 듬뿍 받는 한국의 전통음료
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </React.Fragment>
+
+                    <div className='label label-summer'>여름 시즌 메뉴</div>
                         <div className='item-wrapper'>
                             <div className='item'>
                                 <div className='img bingsu'></div>
@@ -504,125 +594,6 @@ const Menu = () => {
                                 </div>
                             </div>
                         </div>
-                    </React.Fragment>
-                :
-                    <React.Fragment>
-                        <div className='item-wrapper'>
-                            <div className='item'>
-                                <div className='img tteokkochi'></div>
-                                <div className='top'>
-                                    <div className='name'>떡꼬치</div>
-                                    <div className='price'>4,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        매콤달콤한 양념이 쫄깃한 떡에 스며들어 중독성 있는 추억의 길거리 간식
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img sotteok-sotteok'></div>
-                                <div className='top'>
-                                    <div className='name'>소떡소떡</div>
-                                    <div className='price'>4,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        뽀드득뽀드득 통통소세지와 쫜득쫜득한 쌀떡에 매콤달콤 소스가 만나 언제 먹어도 맛있는 마성의 간식
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img chicken-skewers'></div>
-                                <div className='top'>
-                                    <div className='name'>닭꼬치</div>
-                                    <div className='price'>6,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        불향 가득, 달콤 짭짤 소스가 배인 촉촉한 닭고기 꼬치
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img sikhye'></div>
-                                <div className='top'>
-                                    <div className='name'>식혜</div>
-                                    <div className='price'>5,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        구수한 엿기름 향과 달콤함이 어우러진 해외팬들의 사랑 듬뿍 받는 한국의 전통음료
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='label label-korean-street-food'>분식</div>
-                        <div className='item-wrapper'>
-                            <div className='item'>
-                                <div className='img tteokbokki'></div>
-                                <div className='top'>
-                                    <div className='name'>떡볶이</div>
-                                    <div className='price'>6,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        쫄깃한 떡에 매콤달콤 양념이 진하게 배어 한입마다 중독되는 국민 간식
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img fishcake'></div>
-                                <div className='top'>
-                                    <div className='name'>꼬치어묵</div>
-                                    <div className='price'>3개 5,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        어묵 함량 높은 고급 어묵과 직접 채수를 우려내 만든 수제 어묵국물로 겨울철 촬영장의 인기 메뉴!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img sundae'></div>
-                                <div className='top'>
-                                    <div className='name'>순대</div>
-                                    <div className='price'>5,000원</div>
-                                </div>
-                                <div className='bottom'>
-                                    <div className='description'>
-                                        김이 모락모락, 고소하고 부드러운 속재료와 쫄깃한 피가 어우러진 대표 분식 메뉴
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* <div className='label label-korean-street-food'>분식 세트 메뉴</div>
-                        <div className='item-wrapper'>
-                            <div className='item'>
-                                <div className='img set1'></div>
-                                <div className='top'>
-                                    <div className='name'>[세트1] 떡볶이+어묵</div>
-                                    <div className='price'>7,000원</div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img set2'></div>
-                                <div className='top'>
-                                    <div className='name'>[세트2] 떡볶이+순대</div>
-                                    <div className='price'>9,000원</div>
-                                </div>
-                            </div>
-                            <div className='item'>
-                                <div className='img set3'></div>
-                                <div className='top'>
-                                    <div className='name'>[세트3] 떡볶이+어묵+순대</div>
-                                    <div className='price'>12,000원</div>
-                                </div>
-                            </div>
-                        </div> */}
-                    </React.Fragment>}
             </div>
         </div>
     </div>
