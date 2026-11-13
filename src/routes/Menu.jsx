@@ -328,7 +328,7 @@ const Menu = () => {
                                 </div>
                                 <div className='bottom'>
                                     <div className='description'>
-                                        야외에서도 촬영차 안에서도 깔끔하게! 햄,치즈,에그와 싱그러운 채소의 완벽한 밸런스. 컵과일과 세트로 주문 가능
+                                        심플하지만 깊은 맛! 좋은 재료의 조화로 완성한 프랑스 감성 가득한 샌드위치. 컵과일과 세트로 주문 가능
                                     </div>
                                 </div>
                             </div>

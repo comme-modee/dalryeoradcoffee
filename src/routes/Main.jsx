@@ -43,14 +43,14 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className='sub-text'>
+            {/* <div className='sub-text'>
                 <p>We bring people to life.</p>
                 <p>Through coffee, community, and kindness,</p>
                 <p>we create safe rhythms and shared spaces</p>
                 <p>for reclusive youth and isolated lives to breathe once more.</p>
 
                 <p>“내가 너희 속에 생기를 넣으리니 너희가 살아나리라” — 에스겔 37:5</p>
-            </div>
+            </div> */}
 
             <div
                 className='service-fade'
